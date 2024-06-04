@@ -36,7 +36,7 @@
 			<div class="review-details">
 				<p class="review-content">Lorem ipsum dolor sit amet consectetur. Ullamcorper cum eu felis vestibulum. Bibendum habitasse nulla sit dui tortor vulputate adipiscing commodo. Tincidunt rutrum senectus nunc sagittis sagittis non tempus. Quam cursus sagittis tellus convallis rutrum commodo. </p>
 				<div class="reviewer">
-					<img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/review/review-logo-1.jpg" alt="">
 
 					<div class="reviewer-information">
 						<div class="reviewer-name">Heyaa L.</div>

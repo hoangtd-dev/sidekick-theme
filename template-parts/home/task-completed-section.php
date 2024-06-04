@@ -27,7 +27,7 @@
 		<div class="task-item-section">
 			<div class="task-item">
 				<div class="task-image">
-					<img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-1.jpg" alt="">
 				</div>
 
 				<div class="task-details">
@@ -38,7 +38,7 @@
 
 			<div class="task-item">
 				<div class="task-image">
-					<img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-2.jpg" alt="">
 				</div>
 
 				<div class="task-details">
@@ -49,7 +49,7 @@
 
 			<div class="task-item">
 				<div class="task-image">
-					<img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-3.jpg" alt="">
 				</div>
 
 				<div class="task-details">
@@ -60,7 +60,7 @@
 
 			<div class="task-item">
 				<div class="task-image">
-					<img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-4.jpg" alt="">
 				</div>
 
 				<div class="task-details">
@@ -71,7 +71,7 @@
 
 			<div class="task-item">
 				<div class="task-image">
-					<img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-5.jpg" alt="">
 				</div>
 
 				<div class="task-details">
@@ -82,7 +82,7 @@
 
 			<div class="task-item">
 				<div class="task-image">
-					<img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-6.jpg" alt="">
 				</div>
 
 				<div class="task-details">
