@@ -1,0 +1,46 @@
+@use "sass:map";
+@import "./color";
+
+@mixin button {
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.stoked-button {
+  @include button;
+  border: 1px solid;
+  background-color: $white;
+  min-height: 40px;
+
+  &.primary-color {
+    color: map.get($colors, "primary-500");
+    border-color: map.get($colors, "primary-500");
+  }
+  &.neutral-color {
+    color: map.get($colors, "neutral-500");
+    border-color: map.get($colors, "neutral-500");
+  }
+}
+
+.flat-button {
+  @include button;
+  border: none;
+  height: 40px;
+  padding: 0px 15px;
+
+  &.primary-color {
+    background-color: map.get($colors, "primary-500");
+    color: $white;
+  }
+
+  &.primary-color-v2 {
+    background-color: white;
+    color: map.get($colors, "primary-500");
+  }
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+}

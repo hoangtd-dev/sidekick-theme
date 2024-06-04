@@ -1,0 +1,118 @@
+$aligns: (left, right, center);
+
+@each $value in $aligns {
+  .text-#{$value} {
+    text-align: $value;
+  }
+}
+
+$paddings: (
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+);
+
+@each $index, $value in $paddings {
+  .p-#{$index} {
+    padding: $value;
+  }
+
+  .px-#{$index} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$index} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .pt-#{$index} {
+    padding-top: $value;
+  }
+
+  .pr-#{$index} {
+    padding-right: $value;
+  }
+
+  .pb-#{$index} {
+    padding-bottom: $value;
+  }
+
+  .pl-#{$index} {
+    padding-left: $value;
+  }
+}
+
+$margins: (
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  16: 16px,
+  20: 20px,
+);
+
+@each $index, $value in $margins {
+  .m-#{$index} {
+    margin: $value;
+  }
+
+  .mx-#{$index} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .my-#{$index} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .mt-#{$index} {
+    margin-top: $value;
+  }
+
+  .mr-#{$index} {
+    margin-right: $value;
+  }
+
+  .mb-#{$index} {
+    margin-bottom: $value;
+  }
+
+  .ml-#{$index} {
+    margin-left: $value;
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.text-header {
+  font-size: 40px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}

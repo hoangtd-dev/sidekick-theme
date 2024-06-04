@@ -1,0 +1,120 @@
+@use "sass:map";
+@import "./color";
+
+.introduction-gradient-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  &.border-radius-24 {
+    border-radius: 24px;
+  }
+
+  div:nth-child(3) {
+    position: absolute;
+    border-radius: 30%;
+    height: 120%;
+    width: 85%;
+    left: -20%;
+    top: -10%;
+    background-color: map.get($colors, "primary-200");
+    animation: gradient 4s infinite;
+    animation-delay: 4s;
+  }
+
+  div:nth-child(2) {
+    position: absolute;
+    border-radius: 38%;
+    height: 110%;
+    width: 60%;
+    top: -30%;
+    right: -8%;
+    background-color: map.get($colors, "primary-400");
+    animation: gradient 4s infinite;
+    animation-delay: 2s;
+  }
+
+  div:nth-child(1) {
+    position: absolute;
+    border-radius: 50%;
+    height: 90%;
+    width: 60%;
+    bottom: -25%;
+    right: -10%;
+    background-color: map.get($colors, "secondary-400");
+    animation: gradient 4s infinite;
+    animation-delay: 1s;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+  }
+}
+
+@keyframes gradient {
+  70% {
+    transform: scale(1.2) translate(50px);
+  }
+}
+
+.gradient-background-v2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+
+  div:nth-child(2) {
+    position: absolute;
+    border-radius: 56%;
+    height: 40%;
+    width: 30%;
+    top: 25%;
+    left: 30%;
+    background-color: map.get($colors, "primary-100");
+    animation: move-left-to-right 10s infinite;
+  }
+
+  div:nth-child(1) {
+    position: absolute;
+    border-radius: 56%;
+    height: 40%;
+    width: 30%;
+    top: 25%;
+    left: 15%;
+    background-color: map.get($colors, "secondary-100");
+    animation: move-left-to-right 10s infinite;
+    animation-delay: 0.5s;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+  }
+}
+
+@keyframes move-left-to-right {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 10%;
+  }
+}

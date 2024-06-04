@@ -1,0 +1,73 @@
+$black: #000;
+$white: #fff;
+
+$colors: (
+  "primary-50": #e6f1ff,
+  "primary-100": #b0d5fe,
+  "primary-200": #8ac0fe,
+  "primary-300": #54a4fe,
+  "primary-400": #3392fd,
+  "primary-500": #0077fd,
+  "primary-600": #006ce6,
+  "primary-700": #0054b4,
+  "primary-800": #00418b,
+  "primary-900": #00326a,
+  "secondary-50": #e7f6eb,
+  "secondary-100": #b3e4c2,
+  "secondary-200": #8fd7a4,
+  "secondary-300": #5cc57a,
+  "secondary-400": #3cba61,
+  "secondary-500": #0ba939,
+  "secondary-600": #0a9a34,
+  "secondary-700": #087828,
+  "secondary-800": #065d1f,
+  "secondary-900": #054718,
+  "neutral-50": #e9e9e9,
+  "neutral-100": #bbbbbb,
+  "neutral-200": #9a9a9a,
+  "neutral-300": #6c6c6c,
+  "neutral-400": #505050,
+  "neutral-500": #242424,
+  "neutral-600": #212121,
+  "neutral-700": #1a1a1a,
+  "neutral-800": #141414,
+  "neutral-900": #0f0f0f,
+  "error-50": #ffebe9,
+  "error-100": #fec1bc,
+  "error-200": #fda39c,
+  "error-300": #fc796e,
+  "error-400": #fc5f52,
+  "error-500": #fb3727,
+  "error-600": #e43223,
+  "error-700": #b2271c,
+  "error-800": #8a1e15,
+  "error-900": #691710,
+  "warning-50": #fef5e7,
+  "warning-100": #fce1b3,
+  "warning-200": #fad28f,
+  "warning-300": #f8be5c,
+  "warning-400": #f7b13c,
+  "warning-500": #f59e0b,
+  "warning-600": #df900a,
+  "warning-700": #ae7008,
+  "warning-800": #875706,
+  "warning-900": #674205,
+);
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+@each $color-name, $value in $colors {
+  .text-#{$color-name} {
+    color: #{$value} !important;
+  }
+
+  .bg-#{$color-name} {
+    background-color: #{$value} !important;
+  }
+}
