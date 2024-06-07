@@ -2,6 +2,7 @@
 .circle-container-v2 {
   display: flex;
   position: relative;
+  justify-content: space-between;
 
   &.circle-absolute {
     position: absolute;
@@ -110,6 +111,11 @@
   }
 }
 
+.title-circle {
+  display: flex;
+  position: relative;
+}
+
 .title-circle-1 {
   border-radius: 56%;
   background: linear-gradient(45deg, #def5ff, #84d0fd);
@@ -119,12 +125,12 @@
 
 .title-circle-2 {
   border-radius: 56px;
-  padding: 0px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(#f8f9f9, 0.7);
   left: 25px;
+  width: 48px;
   height: 48px;
   position: absolute;
 }

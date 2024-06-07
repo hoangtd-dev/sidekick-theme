@@ -23,6 +23,7 @@
     left: -20%;
     top: -10%;
     background-color: map.get($colors, "primary-200");
+    opacity: 80%;
     animation: gradient 4s infinite;
     animation-delay: 4s;
   }
@@ -35,6 +36,7 @@
     top: -30%;
     right: -8%;
     background-color: map.get($colors, "primary-400");
+    opacity: 80%;
     animation: gradient 4s infinite;
     animation-delay: 2s;
   }
@@ -47,6 +49,7 @@
     bottom: -25%;
     right: -10%;
     background-color: map.get($colors, "secondary-400");
+    opacity: 80%;
     animation: gradient 4s infinite;
     animation-delay: 1s;
   }
