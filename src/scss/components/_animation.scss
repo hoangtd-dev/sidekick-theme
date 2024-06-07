@@ -66,7 +66,7 @@
 .circle-1 {
   flex-shrink: 0;
   border-radius: 56%;
-  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.15);
   mix-blend-mode: luminosity;
   animation: float-right 4s linear infinite;
@@ -96,16 +96,19 @@
   animation-direction: alternate;
 
   &.circle-large {
+    border: 1px solid rgba(255, 255, 255, .4);
     width: 368px;
     height: 368px;
   }
 
   &.circle-medium {
+    border: 1px solid rgba(255, 255, 255, .4);
     width: 240px;
     height: 240px;
   }
 
   &.circle-small {
+    border: 1px solid rgba(255, 255, 255, .4);
     width: 62px;
     height: 62px;
   }
@@ -118,6 +121,7 @@
 
 .title-circle-1 {
   border-radius: 56%;
+  border: 1px solid rgba(255, 255, 255, .4);
   background: linear-gradient(45deg, #def5ff, #84d0fd);
   width: 48px;
   height: 48px;
@@ -125,6 +129,22 @@
 
 .title-circle-2 {
   border-radius: 56px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#f8f9f9, 0.7);
+  left: 25px;
+  // width: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 48px;
+  position: absolute;
+}
+
+.item-circle-2 {
+  border-radius: 56px;
+  border: 1px solid rgba(255, 255, 255, .4);
   display: flex;
   justify-content: center;
   align-items: center;

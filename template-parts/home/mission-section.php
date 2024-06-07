@@ -30,7 +30,7 @@
 				<div class="circle-container-v2">
 					<div class="title-circle">
 						<div class="title-circle-1"></div>
-						<div class="title-circle-2"></div>
+						<div class="item-circle-2"></div>
 					</div>
 					<div class="mission-details-index">01</div>
 				</div>
@@ -54,7 +54,7 @@
 				<div class="circle-container-v2">
 					<div class="title-circle">
 						<div class="title-circle-1"></div>
-						<div class="title-circle-2"></div>
+						<div class="item-circle-2"></div>
 					</div>
 					<div class="mission-details-index">02</div>
 				</div>
@@ -78,7 +78,7 @@
 				<div class="circle-container-v2">
 					<div class="title-circle">
 						<div class="title-circle-1"></div>
-						<div class="title-circle-2"></div>
+						<div class="item-circle-2"></div>
 					</div>
 					<div class="mission-details-index">03</div>
 				</div>
@@ -102,7 +102,7 @@
 				<div class="circle-container-v2">
 					<div class="title-circle">
 						<div class="title-circle-1"></div>
-						<div class="title-circle-2"></div>
+						<div class="item-circle-2"></div>
 					</div>
 					<div class="mission-details-index">04</div>
 				</div>
@@ -127,7 +127,7 @@
 				<div class="circle-container-v2">
 					<div class="title-circle">
 						<div class="title-circle-1"></div>
-						<div class="title-circle-2"></div>
+						<div class="item-circle-2"></div>
 					</div>
 					<div class="mission-details-index">05</div>
 				</div>
