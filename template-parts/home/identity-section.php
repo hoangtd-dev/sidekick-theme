@@ -23,48 +23,50 @@
 	</div>
 
 	<div class="identity-title-section">
-		<p class="title text-uppercase">We provoke what's possible.</p>
-		<p class="description">We strive to innovate. We are obsessed with finding opportunities to connect brands with customers, creating gold-standard digital experiences and driving revenue growth.</p>
+		<p class="title text-uppercase">Built on experience, <br>we prioritize client success</p>
+		<p class="description">we cherish every opportunity to collaborate by consistently <br>delivering top-notch solutions and quality work to each client, <br>aiming to drive the growth of their businesses.</p>
 	</div>
 
 	<div class="achievement">
 		<div class="achievement-item-wrapper">
 			<div class="achievement-item">
-				<div class="statistics">
-					95%
+				<div class="statistics number-style">
+					21<span class="small-text">+</span>
 				</div>
 				<div class="statistics-description">
-					Satisfied and Happy Clients
+					business verticals<br>
+					we have served
 				</div>
 			</div>
 		</div>
 		<div class="achievement-item-wrapper">
 			<div class="achievement-item">
-				<div class="statistics">
-					0.5+
+				<div class="statistics number-style">
+					46<span class="small-text">+</span>
 				</div>
 				<div class="statistics-description">
-					Billion Ad Spend Managed
+					satisfied clients<br>
+					we have collaborated
 				</div>
 			</div>
 		</div>
 		<div class="achievement-item-wrapper">
 			<div class="achievement-item">
-				<div class="statistics">
-					0.1+
+				<div class="statistics number-style">
+					20<span class="small-text">+</span>
 				</div>
 				<div class="statistics-description">
-					Million Leads Generated
+					million USD ad spend managed
 				</div>
 			</div>
 		</div>
 		<div class="achievement-item-wrapper">
 			<div class="achievement-item">
-				<div class="statistics">
-					30+
+				<div class="statistics number-style">
+					3<span class="small-text">+</span>
 				</div>
 				<div class="statistics-description">
-					Billion Revenue Generated
+					million USD revenue from sale-driven ads,<br>avg. ROAS of 11x
 				</div>
 			</div>
 		</div>

@@ -20,8 +20,8 @@
 		</div>
 	
 		<div class="mission-title-section">
-			<p class="title text-uppercase">elevating brands through innovation in digital transformation.</p>
-			<p class="description">We are a progressive full-service digital marketing, design, and eCommerce agency growing brands in today’s connected world.</p>
+			<p class="title text-uppercase">empower brands with <br>strategic media excellent & <br>innovative digital</p>
+			<p class="description">we are confident in our ability to support brands​ in all their <br>marketing efforts with consistently excellent quality</p>
 		</div>
 
 		<div class="mission-details-section">
@@ -32,7 +32,7 @@
 						<div class="title-circle-1"></div>
 						<div class="item-circle-2"></div>
 					</div>
-					<div class="mission-details-index">01</div>
+					<div class="mission-details-index number-style">01</div>
 				</div>
 
 				
@@ -56,7 +56,7 @@
 						<div class="title-circle-1"></div>
 						<div class="item-circle-2"></div>
 					</div>
-					<div class="mission-details-index">02</div>
+					<div class="mission-details-index number-style">02</div>
 				</div>
 
 				
@@ -80,7 +80,7 @@
 						<div class="title-circle-1"></div>
 						<div class="item-circle-2"></div>
 					</div>
-					<div class="mission-details-index">03</div>
+					<div class="mission-details-index number-style">03</div>
 				</div>
 
 				
@@ -104,7 +104,7 @@
 						<div class="title-circle-1"></div>
 						<div class="item-circle-2"></div>
 					</div>
-					<div class="mission-details-index">04</div>
+					<div class="mission-details-index number-style">04</div>
 				</div>
 
 				
@@ -129,7 +129,7 @@
 						<div class="title-circle-1"></div>
 						<div class="item-circle-2"></div>
 					</div>
-					<div class="mission-details-index">05</div>
+					<div class="mission-details-index number-style">05</div>
 				</div>
 
 				
