@@ -156,7 +156,7 @@
 
 			<!-- item 6 -->
 			<div class="mission-details">
-				<div class="introduction-gradient-background border-radius-24">
+			<div class="introduction-gradient-background border-radius-24">
 					<div></div>
 					<div></div>
 					<div></div>

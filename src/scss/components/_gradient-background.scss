@@ -1,7 +1,7 @@
 @use "sass:map";
 @import "./color";
 
-.introduction-gradient-background {
+.introduction-gradient-background-v3 {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -58,6 +58,65 @@
   //   width: 100%;
   //   backdrop-filter: blur(80px);
   // }
+}
+
+.introduction-gradient-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  &.border-radius-24 {
+    border-radius: 24px;
+  }
+
+  div:nth-child(3) {
+    position: absolute;
+    border-radius: 30%;
+    height: 120%;
+    width: 85%;
+    left: -20%;
+    top: -10%;
+    background-color: map.get($colors, "primary-200");
+    animation: gradient 4s infinite;
+    animation-delay: 4s;
+  }
+
+  div:nth-child(2) {
+    position: absolute;
+    border-radius: 38%;
+    height: 110%;
+    width: 60%;
+    top: -30%;
+    right: -8%;
+    background-color: map.get($colors, "primary-400");
+    animation: gradient 4s infinite;
+    animation-delay: 2s;
+  }
+
+  div:nth-child(1) {
+    position: absolute;
+    border-radius: 50%;
+    height: calc(100% * 918/1416);
+    width: calc(100% * 918/1416);
+    bottom: -25%;
+    right: -10%;
+    background-color: map.get($colors, "secondary-400");
+    animation: gradient 4s infinite;
+    animation-delay: 1s;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+  }
 }
 
 @keyframes gradient {
@@ -130,8 +189,8 @@
 }
 
 .gradient-circle:nth-child(1){
-  width: 918px;
-  height: 918px;
+  width: 65%;
+  height: 134%;
   top: -25%;
   left: 57%;
   background: rgba(map.get($colors, "primary-500"), 0.6);
@@ -140,8 +199,8 @@
 }
 
 .gradient-circle:nth-child(2){
-  width: 1118px;
-  height: 1118px;
+  width: 79%;
+  height: 163%;
   top: -35%;
   left: 52%;
   background: rgba(map.get($colors, "primary-500"), 0.6);
@@ -160,8 +219,8 @@
 }
 
 .gradient-circle:nth-child(4){
-  width: 638px;
-  height: 638px;
+  width: 45%;
+  height: 93%;
   top: 45%;
   left: 72%;
   background: rgba(map.get($colors, "secondary-300"), 0.4);
@@ -170,8 +229,8 @@
 }
 
 .gradient-circle:nth-child(5){
-  width: 1581px;
-  height: 1581px;
+  width: 112%;
+  height: 230%;
   top: -24%;
   left: -23%;
   transform: rotate(-10deg);
@@ -181,8 +240,8 @@
 }
 
 .gradient-circle:nth-child(6){
-  width: 1512px;
-  height: 1512px;
+  width: 107%;
+  height: 220%;
   top: -25%;
   left: -25%;
   background: rgba(map.get($colors, "primary-200"), .7);

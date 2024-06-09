@@ -12,7 +12,7 @@
 <section id="introduction-slider-section" class="introduction-slider">
 	<div class="introduction-slider-1">
 		<div class="slider-img slider-img-1">
-			<div class="introduction-gradient-background">
+			<div class="introduction-gradient-background-v3">
 				<div class="gradient-circle"></div>
 				<div class="gradient-circle"></div>
 				<div class="gradient-circle"></div>
