@@ -7,62 +7,62 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: -35%;
   bottom: 0;
-  overflow: hidden;
+  // overflow: hidden;
 
   &.border-radius-24 {
     border-radius: 24px;
   }
 
-  div:nth-child(3) {
-    position: absolute;
-    border-radius: 30%;
-    height: 120%;
-    width: 85%;
-    left: -20%;
-    top: -10%;
-    background-color: map.get($colors, "primary-200");
-    animation: gradient 4s infinite;
-    animation-delay: 4s;
-  }
+  // div:nth-child(3) {
+  //   position: absolute;
+  //   border-radius: 30%;
+  //   height: 120%;
+  //   width: 85%;
+  //   left: -20%;
+  //   top: -10%;
+  //   background-color: map.get($colors, "primary-200");
+  //   animation: gradient 4s infinite;
+  //   animation-delay: 4s;
+  // }
 
-  div:nth-child(2) {
-    position: absolute;
-    border-radius: 38%;
-    height: 110%;
-    width: 60%;
-    top: -30%;
-    right: -8%;
-    background-color: map.get($colors, "primary-400");
-    animation: gradient 4s infinite;
-    animation-delay: 2s;
-  }
+  // div:nth-child(2) {
+  //   position: absolute;
+  //   border-radius: 38%;
+  //   height: 110%;
+  //   width: 60%;
+  //   top: -30%;
+  //   right: -8%;
+  //   background-color: map.get($colors, "primary-400");
+  //   animation: gradient 4s infinite;
+  //   animation-delay: 2s;
+  // }
 
-  div:nth-child(1) {
-    position: absolute;
-    border-radius: 50%;
-    height: 90%;
-    width: 60%;
-    bottom: -25%;
-    right: -10%;
-    background-color: map.get($colors, "secondary-400");
-    animation: gradient 4s infinite;
-    animation-delay: 1s;
-  }
+  // div:nth-child(1) {
+  //   position: absolute;
+  //   border-radius: 50%;
+  //   height: calc(100% * 918/1416);
+  //   width: calc(100% * 918/1416);
+  //   bottom: -25%;
+  //   right: -10%;
+  //   background-color: map.get($colors, "secondary-400");
+  //   animation: gradient 4s infinite;
+  //   animation-delay: 1s;
+  // }
 
-  &::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(80px);
-  }
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   height: 100%;
+  //   width: 100%;
+  //   backdrop-filter: blur(80px);
+  // }
 }
 
 @keyframes gradient {
   70% {
-    transform: scale(1.2) translate(50px);
+    transform: scale(1.5) translate(50px);
   }
 }
 
@@ -116,5 +116,204 @@
   }
   100% {
     left: 10%;
+  }
+}
+
+
+// gradient-background-v3
+
+.gradient-circle{
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  
+}
+
+.gradient-circle:nth-child(1){
+  width: 918px;
+  height: 918px;
+  top: -25%;
+  left: 57%;
+  background: rgba(map.get($colors, "primary-500"), 0.6);
+  mix-blend-mode: overlay;
+  animation: scaleCircle1 8s infinite ease;
+}
+
+.gradient-circle:nth-child(2){
+  width: 1118px;
+  height: 1118px;
+  top: -35%;
+  left: 52%;
+  background: rgba(map.get($colors, "primary-500"), 0.6);
+  mix-blend-mode: overlay;
+  animation: scaleCircle2 8s infinite ease;
+}
+
+.gradient-circle:nth-child(3){
+  width: 638px;
+  height: 638px;
+  top: 45%;
+  left: 77%;
+  background: rgba(map.get($colors, "secondary-300"), 0.4);
+  mix-blend-mode: overlay;
+  animation: scaleCircle3 8s infinite ease;
+}
+
+.gradient-circle:nth-child(4){
+  width: 638px;
+  height: 638px;
+  top: 45%;
+  left: 72%;
+  background: rgba(map.get($colors, "secondary-300"), 0.4);
+  mix-blend-mode: overlay;
+  animation: scaleCircle4 8s infinite ease;
+}
+
+.gradient-circle:nth-child(5){
+  width: 1581px;
+  height: 1581px;
+  top: -24%;
+  left: -23%;
+  transform: rotate(-10deg);
+  background: rgba(map.get($colors, "primary-200"), 1);
+  mix-blend-mode: overlay;
+  animation: scaleCircle5 8s infinite ease;
+}
+
+.gradient-circle:nth-child(6){
+  width: 1512px;
+  height: 1512px;
+  top: -25%;
+  left: -25%;
+  background: rgba(map.get($colors, "primary-200"), .7);
+  mix-blend-mode: overlay;
+  animation: scaleCircle6 8s infinite ease;
+}
+
+@keyframes scaleCircle1 {
+  0% {
+    
+  }
+  33% {
+    scale: calc(1116/918);
+    top: -15%;
+    left: 60%;
+  }
+  50% {
+    scale: calc(1015/918);
+    top: 4%;
+    left: 55%;
+  }
+  75% {
+    scale: calc(1045/918);
+    top: -4%;
+    left: 62%;
+  }
+}
+
+@keyframes scaleCircle2 {
+  0% {
+    
+  }
+  25% {
+    scale: calc(1360/1118);
+    top: -29%;
+    left: 52%;
+    background: rgba(map.get($colors, "secondary-200"), .5)
+  }
+  50% {
+    scale: calc(1237/1118);
+    top: -8%;
+    left: 49%;
+    background: rgba(map.get($colors, "secondary-200"), .7)
+  }
+  75% {
+    scale: calc(1273/1118);
+    top: 20%;
+    left: 55%;
+  }
+}
+
+@keyframes scaleCircle3 {
+  0% {
+    
+  }
+  25% {
+    scale: calc(604/638);
+    top: 69%;
+    left: 80%;
+  }
+  50% {
+    scale: calc(604/638);
+    top: 76%;
+    left: 74%;
+  }
+  75% {
+    scale: calc(626/638);
+    top: 70%;
+    left: 50%;
+  }
+}
+
+@keyframes scaleCircle4 {
+  0% {
+    
+  }
+  25% {
+    scale: calc(606/638);
+    top: 70%;
+    left: 74%;
+  }
+  50% {
+    scale: calc(606/638);
+    top: 77%;
+    left: 71%;
+  }
+  75% {
+    scale: calc(626/638);
+    top: 72%;
+    left: 50%;
+  }
+}
+
+@keyframes scaleCircle5 {
+  0% {
+    
+  }
+  25% {
+    scale: calc(1606/1581);
+    top: -24%;
+    left: -21.5%;
+  }
+  50% {
+    scale: calc(1616/1581);
+    top: -32%;
+    left: -20%;
+  }
+  75% {
+    scale: calc(1678/1581);
+    top: -32%;
+    left: -17%;
+  }
+}
+
+@keyframes scaleCircle6 {
+  0% {
+    
+  }
+  25% {
+    scale: calc(1536/1512);
+    top: -21%;
+    left: -23%;
+  }
+  50% {
+    scale: calc(1546/1512);
+    top: -28%;
+    left: -22%;
+  }
+  75% {
+    scale: calc(1606/1512);
+    top: -30%;
+    left: -19%;
   }
 }

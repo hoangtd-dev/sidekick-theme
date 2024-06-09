@@ -13,9 +13,12 @@
 	<div class="introduction-slider-1">
 		<div class="slider-img slider-img-1">
 			<div class="introduction-gradient-background">
-				<div></div>
-				<div></div>
-				<div></div>
+				<div class="gradient-circle"></div>
+				<div class="gradient-circle"></div>
+				<div class="gradient-circle"></div>
+				<div class="gradient-circle"></div>
+				<div class="gradient-circle"></div>
+				<div class="gradient-circle"></div>
 			</div>
 
 			<div class="slider-content">
