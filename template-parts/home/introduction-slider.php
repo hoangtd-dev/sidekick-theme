@@ -22,19 +22,23 @@
 			</div>
 
 			<div class="slider-content">
-				<p class="title text-uppercase">We create</p>
+				<p class="title text-uppercase">Your brand's</p>
 				<div class="flex">
 					<div class="circle-container">
 						<div class="circle-1 circle-small"></div>
 						<div class="circle-2 circle-small"></div>
 					</div>
-					<p class="title text-uppercase">client-focused</p>
+					<p class="title text-uppercase">innovative partner</p>
 				</div>
-				<p class="title text-uppercase">product marketing.</p>
+				<p class="title text-uppercase">for growth</p>
 			</div>
 
 			<div class="slider-description">
-				<p class="content text-uppercase">elevating brands through digital innovation</p>
+				<p class="content text-uppercase">quality</p>
+				<div class="slider-description-circle"></div>
+				<p class="content text-uppercase">collaboration</p>
+				<div class="slider-description-circle"></div>
+				<p class="content text-uppercase">innovation</p>
 			</div>
 
 			<div class="circle-container circle-absolute">
@@ -43,9 +47,9 @@
 			</div>
 
 			<button
-				class="flat-button primary-color-v2 text-uppercase slider-action"
+				class="flat-button slider-button primary-color-v2 text-uppercase slider-action"
 			>
-				Let's discuss <i class="fa-solid fa-arrow-right mx-8"></i>
+				<span>Let's discuss</span> <i class="fa-solid fa-arrow-right"></i>
 			</button>
 		</div>
 
@@ -113,9 +117,9 @@
 				</div>
 
 				<button
-					class="flat-button primary-color-v2 text-uppercase slider-action"
+					class="flat-button slider-button primary-color-v2 text-uppercase slider-action"
 				>
-					go to case <i class="fa-solid fa-arrow-right mx-8"></i>
+					<span>go to case</span> <i class="fa-solid fa-arrow-right mx-8"></i>
 				</button>
 			</div>
 	</div

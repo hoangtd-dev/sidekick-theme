@@ -26,8 +26,11 @@
 .flat-button {
   @include button;
   border: none;
-  height: 40px;
-  padding: 0px 15px;
+  // height: 40px;
+  // padding: 14px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &.primary-color {
     background-color: map.get($colors, "primary-500");
@@ -37,6 +40,30 @@
   &.primary-color-v2 {
     background-color: white;
     color: map.get($colors, "primary-500");
+  }
+}
+
+.header-button {
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  span {
+    padding-right: 16px;
+    
+  }
+}
+
+.slider-button {
+  padding: 21px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+
+  span{
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

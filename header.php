@@ -96,16 +96,16 @@
       <section>
         <button
           id="header-contactBtn"
-          class="flat-button primary-color text-uppercase"
+          class="flat-button header-button primary-color text-uppercase"
         >
-          Get in touch
+          <span class="mr-16">Get in touch</span><i class="fa-solid fa-arrow-right"></i>
         </button>
-        <button
+        <!-- <button
           id="header-navigation-menu"
           class="stoked-button primary-color icon-btn"
         >
-          <i class="fa-solid fa-bars"></i>
-        </button>
+          <i class="fa-solid fa-arrow-right mx-8"></i>
+        </button> -->
       </section>
     </header>
     <!-- End header -->
