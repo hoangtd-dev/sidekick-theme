@@ -156,16 +156,20 @@
 
 			<!-- item 6 -->
 			<div class="mission-details">
-			<div class="introduction-gradient-background border-radius-24">
-					<div></div>
-					<div></div>
-					<div></div>
+				<div class="introduction-gradient-background-v3 gradient-mission">
+					<div class="gradient-circle"></div>
+					<div class="gradient-circle"></div>
+					<div class="gradient-circle"></div>
+					<div class="gradient-circle"></div>
+					<div class="gradient-circle"></div>
+					<div class="gradient-circle"></div>
 				</div>
-				<div class="circle-container circle-center">
+
+				<div class="circle-container circle-center" style="z-index: 2">
 					<div class="circle-1 circle-medium"></div>
 					<div class="circle-2 circle-medium"></div>
 				</div>
-				<div class="mission-detail-custom">
+				<div class="mission-detail-custom" style="z-index: 2">
 					<p class="mission-details-title-custom text-uppercase">
 						custom solutions on demand
 					</p>
