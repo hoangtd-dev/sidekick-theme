@@ -46,7 +46,7 @@
 				<div class="circle-2 circle-large"></div>
 			</div>
 
-			<button class="flat-button slider-button primary-color-v2 text-uppercase slider-action">
+			<button class="flat-button slider-button toForm primary-color-v2 text-uppercase slider-action">
 				<span>Let's discuss</span> <i class="fa-solid fa-arrow-right"></i>
 			</button>
 		</div>

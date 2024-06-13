@@ -11,19 +11,18 @@
 .form-section-wrapper {
   padding: 64px;
 }
-.form-title{
-
-font-size: 48px;
-font-weight: 500;
-line-height: 52px;
-letter-spacing: -0.5px;
-text-align: left;
-
+.form-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: map.get($colors, "neutral-500");
 }
 .form-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
+  margin: 48px auto 0 auto;
   gap: 30px;
   > * {
     display: flex;
@@ -33,15 +32,77 @@ text-align: left;
     font-weight: 500;
     line-height: 26px;
     text-align: left;
+    color: map.get($colors, "neutral-500");
   }
   input,
-  select {
+  select,
+  textarea {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    height: 56px;
+    background-color: #f8f9f9;
+    border-radius: 8px;
+    margin-top: 6px;
+    padding: 0 32px;
+  }
+
+  textarea {
+    padding: 16px 32px;
+    font-family: inherit;
   }
 }
 
-.form-industry .form-message .form-interest {
+.form-interest {
+  position: relative;
+  select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow in WebKit browsers */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    
+  }
+
+select, select option {
+    text-transform: capitalize;
+}
+
+  &::after {
+    content: "▼";
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    font-size: inherit;
+    color: inherit;
+    pointer-events: none;
+  }
+}
+
+.form-industry,
+.form-message,
+.form-interest {
   grid-column: span 2;
 }
+// .form-message {
+//   textarea {
+//     min-height: 118px;
+//     // padding: 32px 32px auto 32px;
+//     margin-top: 6px;
+//     &::placeholder {
+//       //   padding: 32px 32px auto 32px;
+//       text-wrap: wrap;
+//       font-weight: 400;
+//       line-height: 24px;
+//       text-align: left;
+//       min-height: 118px;
+//       background-color: #f8f9f9;
+//       border-radius: 8px;
+//       vertical-align: text-bottom;
+//       padding: 16px;
+//       font-family: Be Vietnam Pro;
+//       font-size: 16px;
+//       font-weight: 400;
+//       line-height: 24px;
+//       text-align: left;
+//     }
+//   }
+// }

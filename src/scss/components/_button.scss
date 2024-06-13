@@ -4,14 +4,19 @@
 @mixin button {
   border-radius: 56px;
   cursor: pointer;
-  font-size: 16px;
 }
 
 .stoked-button {
   @include button;
   border: 1px solid;
   background-color: $white;
-  min-height: 40px;
+  padding: 15px 30px;
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  align-items: center;
 
   &.primary-color {
     color: map.get($colors, "primary-500");
@@ -26,8 +31,6 @@
 .flat-button {
   @include button;
   border: none;
-  // height: 40px;
-  // padding: 14px 21px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +54,6 @@
 
   span {
     padding-right: 16px;
-    
   }
 }
 
@@ -61,10 +63,19 @@
   font-weight: 500;
   line-height: 22px;
 
-  span{
+  span {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.footer-button {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 20px 30px;
+  gap: 12px;
+  margin-top: 32px;
 }
 
 .icon-btn {

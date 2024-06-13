@@ -55,7 +55,7 @@
           <a class="text-uppercase text-neutral-500 p-8" href="<?php echo esc_url(home_url('/')); ?>">Contact us</a>
         </nav>
 
-        <button class="flat-button primary-color text-uppercase navigation-contact-btn">
+        <button class="flat-button primary-color text-uppercase toForm navigation-contact-btn">
           Get in touch
         </button>
         <p class="text-neutral-200 text-center">
@@ -79,8 +79,8 @@
       </nav>
 
       <section>
-        <button id="header-contactBtn" class="flat-button header-button primary-color text-uppercase">
-          <span class="mr-16">Get in touch</span><i class="fa-solid fa-arrow-right"></i>
+        <button id="header-contactBtn" class="flat-button toForm header-button primary-color text-uppercase">
+          <span>Get in touch</span><i class="fa-solid fa-arrow-right"></i>
         </button>
         <!-- <button
           id="header-navigation-menu"

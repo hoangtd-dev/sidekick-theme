@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 @import "components/color";
 @import "components/header";
 @import "components/footer";
@@ -16,3 +26,4 @@
 @import "components/home/banner-section";
 @import "components/home/review-section";
 @import "components/home/task-completed-section";
+@import "components/home/form-section";

@@ -1,5 +1,8 @@
 @use "sass:map";
 @import "./color";
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   text-decoration: none;
@@ -10,11 +13,11 @@ img {
   max-width: 100%;
 }
 
-.site-main{
+.site-main {
   > *:not(:first-child) {
     display: block;
-    margin: 60px 12px 0px 12px; 
-} 
+    margin: 60px 12px 0px 12px;
+  }
 }
 
 body {
@@ -39,6 +42,9 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-style: normal;
 }
-.small-text{
+.small-text {
   font-size: 80%;
+}
+footer{
+  padding: 120px 112px;
 }
