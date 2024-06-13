@@ -28,7 +28,7 @@
 			<div class="task-item-grid">
 				<div class="task-item">
 					<div class="task-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-1.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/what-we-did/industry-insurance.jpg" alt="">
 					</div>
 					<div class="task-details">
 						<p class="task-title text-uppercase">insurance</p>
@@ -37,7 +37,7 @@
 				</div>
 				<div class="task-item">
 					<div class="task-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-2.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/what-we-did/industry-bank&fin.jpg" alt="">
 					</div>
 					<div class="task-details">
 						<p class="task-title text-uppercase">banking & finance</p>
@@ -46,7 +46,7 @@
 				</div>
 				<div class="task-item">
 					<div class="task-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-3.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/what-we-did/industry-automotive.jpg" alt="">
 					</div>
 					<div class="task-details">
 						<p class="task-title text-uppercase">automotive</p>
@@ -55,7 +55,7 @@
 				</div>
 				<div class="task-item">
 					<div class="task-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-4.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/what-we-did/industry-realestate.jpg" alt="">
 					</div>
 					<div class="task-details">
 						<p class="task-title text-uppercase">real estate</p>
@@ -64,7 +64,7 @@
 				</div>
 				<div class="task-item">
 					<div class="task-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-5.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/what-we-did/industry-fmcg&retail.jpg" alt="">
 					</div>
 					<div class="task-details">
 						<p class="task-title text-uppercase">fmcg & retails</p>
@@ -73,7 +73,7 @@
 				</div>
 				<div class="task-item">
 					<div class="task-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-6.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/what-we-did/industry-beyond.jpg" alt="">
 					</div>
 					<div class="task-details">
 						<p class="task-title text-uppercase">and beyond</p>
