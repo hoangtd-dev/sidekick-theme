@@ -9,12 +9,13 @@
   }
 
   .member-title-section {
-    width: 60%;
+    width: 100%;
     .title {
       margin: 30px 0px;
-      font-size: 68px;
-      line-height: 72px;
+      font-size: 56px;
+      line-height: 60px;
       font-weight: 500;
+      letter-spacing: -3px;
     }
 
     .description-container {
@@ -41,7 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 62px;
 
     .skills-item {
       width: 28%;
@@ -50,7 +51,7 @@
       padding: 20px;
 
       .skills-icon {
-        padding: 10px 0px;
+        padding: 12px 0px;
         i {
           width: 64px;
           height: 64px;
@@ -68,6 +69,7 @@
         font-size: 24px;
         line-height: 32px;
         font-weight: 500;
+        margin-top: 20px;
       }
 
       .skills-description {
@@ -76,6 +78,70 @@
         font-weight: 300;
       }
     }
+  }
+}
+
+.member-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // column-width: calc(100% - 120px);
+    margin-top: 50px;
+    justify-items: center;
+    gap: 32px;
+  }
+}
+.member-item {
+  width: calc(100% - 8px);
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: $white;
+}
+
+.member-desc {
+  margin-top: 32px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 16px;
+}
+
+.member-intro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  .member-name {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .member-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.member-exp {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.member-image {
+aspect-ratio: 1;
+border-radius: 24px;
+overflow: hidden;
+
+  img {
+    object-fit: cover;
+    border-radius: 24px;
   }
 }
 

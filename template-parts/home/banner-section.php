@@ -9,13 +9,21 @@
 
 ?>
 
-<section id="banner-section" class="banner-container">
-	<div class="banner-section-wrapper">
-		<div class="introduction-gradient-background border-radius-24">
+<section id="banner-section" class="banner-container border-radius-24">
+	<div class="introduction-gradient-background-v3" style="z-index: 1">
+		<div class="gradient-circle"></div>
+		<div class="gradient-circle"></div>
+		<div class="gradient-circle"></div>
+		<div class="gradient-circle"></div>
+		<div class="gradient-circle"></div>
+		<div class="gradient-circle"></div>
+	</div>
+	<div class="banner-section-wrapper" style="z-index: 2">
+		<!-- <div class="introduction-gradient-background border-radius-24">
 			<div></div>
 			<div></div>
 			<div></div>
-		</div>
+		</div> -->
 
 		<div class="circle-container circle-left">
 			<div class="circle-1 circle-large"></div>
@@ -37,5 +45,6 @@
 				<p class="text-uppercase">let’s do something <i class="italic-content">amazing</i> together</p>
 			</div>
 		</div>
-	</div
+
+	</div>
 </section>

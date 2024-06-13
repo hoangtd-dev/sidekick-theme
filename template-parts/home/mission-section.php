@@ -155,7 +155,7 @@
 			<!-- end item 5 -->
 
 			<!-- item 6 -->
-			<div class="mission-details">
+			<div class="mission-details border-radius-24">
 				<div class="introduction-gradient-background-v3 gradient-mission">
 					<div class="gradient-circle"></div>
 					<div class="gradient-circle"></div>

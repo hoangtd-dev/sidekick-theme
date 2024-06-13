@@ -21,10 +21,11 @@ get_header();
 			get_template_part( 'template-parts/home/introduction-slider' );
 			get_template_part( 'template-parts/home/identity-section' );
 			get_template_part( 'template-parts/home/mission-section' );
-			get_template_part( 'template-parts/home/member-section' );
+			// get_template_part( 'template-parts/home/review-section' );
 			get_template_part( 'template-parts/home/banner-section' );
 			get_template_part( 'template-parts/home/task-completed-section' );
-			get_template_part( 'template-parts/home/review-section' );
+			get_template_part( 'template-parts/home/member-section' );
+			
 		?>
 
 	</main>
