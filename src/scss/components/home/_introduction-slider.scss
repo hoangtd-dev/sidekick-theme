@@ -163,6 +163,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .introduction-slider {
+    padding: 0 16px;
     .slider-content {
       width: 90%;
       .title {
@@ -184,6 +185,9 @@
 
 @media screen and (max-width: 767px) {
   .introduction-slider {
+    .slider-img {
+        height: 576px;
+    }
     .slider-content {
       width: 95%;
       .title {

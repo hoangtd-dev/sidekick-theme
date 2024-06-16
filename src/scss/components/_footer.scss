@@ -96,10 +96,13 @@
 }
 
 @media screen and (max-width: 767px) {
+  footer {
+    padding: 56px 16px !important;
+  }
   .footer-contact-information-container,
   .footer-social-media-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
   }
 
   .footer-vision-content,
@@ -125,5 +128,18 @@
 
   .footer-back-to-top-btn {
     display: none;
+  }
+  .footer-vision-content {
+    button {
+      margin-top: 24px;
+    }
+  }
+  .footer-navigation-menu {
+    a {
+      text-transform: uppercase;
+    }
+  }
+  .footer-mark {
+    margin-top: 32px;
   }
 }

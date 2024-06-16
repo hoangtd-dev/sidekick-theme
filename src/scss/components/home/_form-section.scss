@@ -1,11 +1,13 @@
 @use "sass:map";
 @import "../color";
 
-.form-container {
-  margin: 60px 112px 0px 112px !important;
-  border: 1px solid map.get($colors, "primary-100");
-  border-radius: 24px;
-  background-color: $white;
+.site-main {
+  .form-container {
+    margin: 60px 112px 0px 112px;
+    border: 1px solid map.get($colors, "primary-100");
+    border-radius: 24px;
+    background-color: $white;
+  }
 }
 
 .form-section-wrapper {
@@ -59,12 +61,12 @@
     appearance: none; /* Remove default arrow */
     -webkit-appearance: none; /* Remove default arrow in WebKit browsers */
     -moz-appearance: none; /* Remove default arrow in Firefox */
-    
   }
 
-select, select option {
+  select,
+  select option {
     text-transform: capitalize;
-}
+  }
 
   &::after {
     content: "▼";
@@ -82,27 +84,63 @@ select, select option {
 .form-interest {
   grid-column: span 2;
 }
-// .form-message {
-//   textarea {
-//     min-height: 118px;
-//     // padding: 32px 32px auto 32px;
-//     margin-top: 6px;
-//     &::placeholder {
-//       //   padding: 32px 32px auto 32px;
-//       text-wrap: wrap;
-//       font-weight: 400;
-//       line-height: 24px;
-//       text-align: left;
-//       min-height: 118px;
-//       background-color: #f8f9f9;
-//       border-radius: 8px;
-//       vertical-align: text-bottom;
-//       padding: 16px;
-//       font-family: Be Vietnam Pro;
-//       font-size: 16px;
-//       font-weight: 400;
-//       line-height: 24px;
-//       text-align: left;
-//     }
-//   }
-// }
+
+@media screen and (min-width: 788px) and (max-width: 1279px) {
+  .site-main {
+    .form-container {
+      margin: 56px 16px 0px 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .site-main {
+    .form-container {
+      margin: 56px 16px 0px 16px;
+    }
+  }
+  .form-industry,
+  .form-message,
+  .form-interest {
+    grid-column: span 1;
+  }
+
+  .form-section-wrapper {
+    padding: 24px;
+    .form-title {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: -0.26px;
+      text-align: left;
+    }
+    .form-info {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 24px;
+      gap: 20px;
+
+      label {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.23px;
+        text-align: left;
+      }
+      input,
+      select,
+      textarea {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.23px;
+        text-align: left;
+        height: 40px;
+      }
+      .form-message {
+        textarea {
+          height: 168px !important;
+        }
+      }
+    }
+  }
+}

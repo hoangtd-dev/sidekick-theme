@@ -4,9 +4,9 @@
 .identity-container {
   position: relative;
   // padding: 50px;
-.identity-section-wrapper{
-  padding: 60px 100px;
-}
+  .identity-section-wrapper {
+    padding: 60px 100px;
+  }
   .section-name {
     font-weight: 400;
     font-size: 16px;
@@ -14,12 +14,12 @@
   }
 
   .identity-title-section {
-    width: 85%;
+    // width: 85%;
     .title {
       margin: 30px 0px;
       font-size: 56px;
-        line-height: 60px;
-        font-weight: 500;
+      line-height: 60px;
+      font-weight: 500;
     }
 
     .description {
@@ -35,27 +35,23 @@
   .achievement {
     display: flex;
     gap: 10px;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 50px;
-    flex-wrap: wrap;
 
-    .achievement-item {
+    .achievement-item-wrapper {
       width: 280px;
       height: 280px;
       border-radius: 56%;
       background-color: rgba(white, 0.5);
       border: 1px solid white;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 10px;
+      display: block;
+      position: relative;
 
       .statistics {
         font-weight: 400;
         font-size: 96px;
         line-height: 76px;
-        transform: translateY(100%);
+        // transform: translateY(100%);
       }
 
       .statistics-description {
@@ -64,15 +60,25 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
-        transform: translateY(75px);
+        // transform: translateY(75px);
       }
+    }
+    .achievement-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60px);
+      width: 100%;
     }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .identity-container {
-    padding: 50px 12px;
+    padding: 50px 16px;
     .identity-title-section {
       .title {
         margin: 30px 0px;
@@ -89,67 +95,97 @@
     }
 
     .achievement {
-      .achievement-item {
-        width: 200px;
-        height: 200px;
+      .achievement-item-wrapper {
+        width: 224.8px;
+        height: 224.8px;
+        // gap: 0px;
+        // justify-content: center;
 
         .statistics {
           font-size: 56px;
+          font-weight: 400;
           line-height: 60px;
         }
 
         .statistics-description {
           width: 80%;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
         }
       }
     }
   }
 }
 
+.identity-container {
+  .identity-section-wrapper {
+    padding: 0px 40px;
+  }
+}
 @media screen and (max-width: 767px) {
   .identity-container {
-    padding: 50px 12px;
+    padding: 0 16px;
+
+    .identity-section-wrapper {
+      padding: 0;
+    }
 
     .section-name {
       font-size: 13px;
+      font-weight: 400;
       line-height: 18px;
+      letter-spacing: -0.08px;
     }
 
     .identity-title-section {
       width: 100%;
       .title {
         font-size: 28px;
+        font-weight: 500;
         line-height: 34px;
-        text-align: center;
+        letter-spacing: -0.5px;
+        margin-top: 20px;
+        margin-bottom: 24px;
       }
 
       .description {
         font-size: 17px;
+        font-weight: 400;
         line-height: 22px;
-        text-align: center;
+        letter-spacing: -0.43px;
+        text-align: left;
       }
     }
-
     .achievement {
-      .achievement-item-wrapper {
-        width: 45%;
+      flex-wrap: wrap;
+      .achievement-item {
+        width: 173px;
+        height: 173px;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .achievement-item {
+        .achievement-item-wrapper {
+          .achievement-content {
+            transform: translate(-50%, -50px);
+          }
           width: 170px;
           height: 170px;
 
           .statistics {
             font-size: 48px;
+            font-weight: 400;
             line-height: 52px;
+            letter-spacing: -0.5px;
           }
 
           .statistics-description {
-            width: 80%;
-            font-size: 15px;
-            line-height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: -0.23px;
+            width: 100%;
           }
         }
       }

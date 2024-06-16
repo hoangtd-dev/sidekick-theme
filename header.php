@@ -29,6 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
   <?php wp_head(); ?>
 </head>
 
@@ -39,23 +40,25 @@
     <!-- Navigation Menu Modal -->
     <div id="modal-navigationMenu" class="modal-wrapper hide">
       <div class="modal modal-medium">
-        <button id="modal-contact-navigationMenu" class="modal-closeBtn stoked-button primary-color">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-
-        <div>
-          <span class="text-uppercase text-primary-500">Sidekick</span>
+        <div class="navMenu-head">
+          <span class="navMenu-logo text-uppercase text-primary-500">Sidekick</span>
+          <button id="modal-contact-navigationMenu" class="modal-closeBtn primary-color">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
-
-        <nav class="modal-navigation-menu mt-20">
-          <a class="text-uppercase text-neutral-500 p-8" href="<?php echo esc_url(home_url('/')); ?>">About us</a>
-          <a class="text-uppercase text-neutral-500 p-8" href="<?php echo esc_url(home_url('/')); ?>">Services</a>
-          <a class="text-uppercase text-neutral-500 p-8" href="<?php echo esc_url(home_url('/')); ?>">Our works</a>
-          <a class="text-uppercase text-neutral-500 p-8" href="<?php echo esc_url(home_url('/')); ?>">Our team</a>
-          <a class="text-uppercase text-neutral-500 p-8" href="<?php echo esc_url(home_url('/')); ?>">Contact us</a>
+        <nav class="navMenu-list mt-20">
+          <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#identity-section')); ?>">About
+            us</a>
+          <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#mission-section')); ?>">Services</a>
+          <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#task-completed-section')); ?>">Our
+            works</a>
+          <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#member-section')); ?>">Our
+            team</a>
+          <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#form-section')); ?>">Contact
+            us</a>
         </nav>
 
-        <button class="flat-button primary-color text-uppercase toForm navigation-contact-btn">
+        <button class="flat-button toForm navMenu-button primary-color text-uppercase">
           Get in touch
         </button>
         <p class="text-neutral-200 text-center">
@@ -67,7 +70,7 @@
     <!-- End Navigation Menu Modal -->
 
     <!-- header -->
-    <header class="header p-20">
+    <header class="header">
       <div class="text-uppercase text-primary-500 website-name">Sidekick</div>
 
       <nav class="navigation">
@@ -78,16 +81,13 @@
         <a class="text-uppercase text-neutral-600 p-20" href="#review-section">Contact us</a>
       </nav>
 
-      <section>
+      <nav class="header-nav">
         <button id="header-contactBtn" class="flat-button toForm header-button primary-color text-uppercase">
           <span>Get in touch</span><i class="fa-solid fa-arrow-right"></i>
         </button>
-        <!-- <button
-          id="header-navigation-menu"
-          class="stoked-button primary-color icon-btn"
-        >
-          <i class="fa-solid fa-arrow-right mx-8"></i>
-        </button> -->
-      </section>
+        <button id="header-navigation-menu" class="navMenu-btn">
+          <img src="<?php echo get_template_directory_uri(); ?>/src/images/header/hamburger.png" alt="">
+        </button>
+      </nav>
     </header>
     <!-- End header -->

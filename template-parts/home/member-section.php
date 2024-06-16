@@ -23,11 +23,12 @@
 			</div>
 		</div>
 		<div class="member-title-section">
-			<p class="title text-uppercase">quality, collaboration, innovation:<br>meet the team behind your next big leap
+			<p class="title text-uppercase">quality, collaboration, innovation:<br>meet the team behind your next big
+				leap
 			</p>
 		</div>
-		<div class="skills-section">
-			<div class="skills-item">
+		<div id="skills-slider" class="skills-section">
+			<div class="skills-item" id="skills-item1">
 				<div class="skills-icon">
 					<i class="fa-solid fa-users-viewfinder"></i>
 				</div>
@@ -36,28 +37,36 @@
 					rigorous benchmarks for excellence. This commitment means we deliver not just what's expected, but
 					exceptional results that truly set your brand apart.</p>
 			</div>
-			<div class="skills-item">
+			<div class="skills-item" id="skills-item2">
 				<div class="skills-icon">
 					<i class="fa-solid fa-users-viewfinder"></i>
 				</div>
 				<p class="skills-title text-uppercase">collaboration</p>
-				<p class="skills-description">Our approach is hands-on and inclusive, involving clients at every step. We
+				<p class="skills-description">Our approach is hands-on and inclusive, involving clients at every step.
+					We
 					build strategies together, combining your insights with our expertise to create impactful, tailored
 					solutions. True collaboration leads to more effective outcomes and builds lasting partnerships.​</p>
 			</div>
-			<div class="skills-item">
+			<div class="skills-item" id="skills-item3">
 				<div class="skills-icon">
 					<i class="fa-solid fa-users-viewfinder"></i>
 				</div>
 				<p class="skills-title text-uppercase">innovation</p>
-				<p class="skills-description">We constantly explore new ideas and technologies to keep your strategies fresh
-					and effective. By adopting innovative approaches, we not only keep up with industry trends but often set
+				<p class="skills-description">We constantly explore new ideas and technologies to keep your strategies
+					fresh
+					and effective. By adopting innovative approaches, we not only keep up with industry trends but often
+					set
 					them, ensuring your brand stays relevant and competitive.​</p>
 			</div>
 		</div>
+		<div class="slider-btns">
+			<button class="slider-btn active" data-target="skills-item1"></button>
+			<button class="slider-btn" data-target="skills-item2"></button>
+			<button class="slider-btn" data-target="skills-item3"></button>
+		</div>
 		<div class="member-list">
-			<div class="member-list-grid">
-				<div class="member-item">
+			<div class="member-list-grid" id="member-slider">
+				<div class="member-item"  id="member-item1">
 					<div class="member-image">
 						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
 							alt="">
@@ -67,15 +76,17 @@
 							<span class="member-name">Son Nguyen</span>
 							<span class="member-title">Founder</span>
 							<p class="member-exp">
-							Our Founder combines over 7 years of expertise in digital marketing, mar-tech, and business
-							operations. His leadership is rooted in experience with technology startups and digital
-							agencies, emphasizing strong management, training capabilities, driving business success.​
-						</p>
+								Our Founder combines over 7 years of expertise in digital marketing, mar-tech, and
+								business
+								operations. His leadership is rooted in experience with technology startups and digital
+								agencies, emphasizing strong management, training capabilities, driving business
+								success.​
+							</p>
 						</div>
-		
+
 					</div>
 				</div>
-				<div class="member-item">
+				<div class="member-item" id="member-item2">
 					<div class="member-image">
 						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
 							alt="">
@@ -85,15 +96,16 @@
 							<span class="member-name">Khoi Tran</span>
 							<span class="member-title">Client Relationships</span>
 							<p class="member-exp">
-							Our Client Relationship Manager offers 7 years of expertise in digital marketing and brand
-							building. Having worked on both agency and client sides, he excels in fostering strong
-							relationships and managing client needs effectively.​​
-						</p>
+								Our Client Relationship Manager offers 7 years of expertise in digital marketing and
+								brand
+								building. Having worked on both agency and client sides, he excels in fostering strong
+								relationships and managing client needs effectively.​​
+							</p>
 						</div>
-		
+
 					</div>
 				</div>
-				<div class="member-item">
+				<div class="member-item" id="member-item3">
 					<div class="member-image">
 						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
 							alt="">
@@ -103,15 +115,17 @@
 							<span class="member-name">Thu Nguyen</span>
 							<span class="member-title">Integrated Planning</span>
 							<p class="member-exp">
-							With 7 years of experience in marketing and extensive portfolio across various industries, our
-							IMC Planning Manager excels in crafting comprehensive media communication and social strategies
-							that enhances brand-customer relationships.​
-						</p>
+								With 7 years of experience in marketing and extensive portfolio across various
+								industries, our
+								IMC Planning Manager excels in crafting comprehensive media communication and social
+								strategies
+								that enhances brand-customer relationships.​
+							</p>
 						</div>
-		
+
 					</div>
 				</div>
-				<div class="member-item">
+				<div class="member-item" id="member-item4">
 					<div class="member-image">
 						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
 							alt="">
@@ -121,15 +135,17 @@
 							<span class="member-name">Trong Nguyen</span>
 							<span class="member-title">Industry Advisor</span>
 							<p class="member-exp">
-							Bringing 12 years of experience in marketing, our Industry Advisor is skilled in navigating both
-							client and agency landscapes. His comprehensive knowledge in business operations and team
-							management ensures effective processes and development.​
-						</p>
+								Bringing 12 years of experience in marketing, our Industry Advisor is skilled in
+								navigating both
+								client and agency landscapes. His comprehensive knowledge in business operations and
+								team
+								management ensures effective processes and development.​
+							</p>
 						</div>
-		
+
 					</div>
 				</div>
-				<div class="member-item">
+				<div class="member-item" id="member-item5">
 					<div class="member-image">
 						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
 							alt="">
@@ -139,15 +155,24 @@
 							<span class="member-name">Hien Le</span>
 							<span class="member-title">Technical Advisor</span>
 							<p class="member-exp">
-							With 14 years of technical expertise and leadership roles including CEO and CTO in multinational
-							companies and startups, our Technical Advisor excels in creating robust solutions tailored for
-							ad-tech and mar-tech, understanding deeply the challenges businesses face.​
-						</p>
+								With 14 years of technical expertise and leadership roles including CEO and CTO in
+								multinational
+								companies and startups, our Technical Advisor excels in creating robust solutions
+								tailored for
+								ad-tech and mar-tech, understanding deeply the challenges businesses face.​
+							</p>
 						</div>
-		
+
 					</div>
 				</div>
 			</div>
+			<div class="member-slider-btns">
+			<button class="member-slider-btn active" data-target="member-item1"></button>
+			<button class="member-slider-btn" data-target="member-item2"></button>
+			<button class="member-slider-btn" data-target="member-item3"></button>
+			<button class="member-slider-btn" data-target="member-item4"></button>
+			<button class="member-slider-btn" data-target="member-item5"></button>
+		</div>
 		</div>
 	</div>
 </section>

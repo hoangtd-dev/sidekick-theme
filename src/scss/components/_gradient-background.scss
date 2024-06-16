@@ -83,34 +83,37 @@
 
 .gradient-background-v2 {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   z-index: -1;
+  opacity: 0.5;
 
   div:nth-child(2) {
     position: absolute;
     border-radius: 56%;
-    height: 40%;
-    width: 30%;
+    height: 60%;
+    width: 40%;
     top: 25%;
     left: 30%;
     background-color: map.get($colors, "primary-100");
     animation: move-left-to-right 10s infinite;
+    animation-delay: 0.5s;
+    filter: blur(150px);
   }
 
   div:nth-child(1) {
     position: absolute;
     border-radius: 56%;
-    height: 40%;
-    width: 30%;
+    height: 60%;
+    width: 40%;
     top: 25%;
     left: 15%;
     background-color: map.get($colors, "secondary-100");
     animation: move-left-to-right 10s infinite;
     animation-delay: 0.5s;
+    filter: blur(150px);
   }
 
   &::after {
@@ -118,19 +121,19 @@
     content: "";
     height: 100%;
     width: 100%;
-    backdrop-filter: blur(80px);
+    z-index: -1;
   }
 }
 
 @keyframes move-left-to-right {
   0% {
-    left: 10%;
+    transform: translateX(-5%);
   }
   50% {
-    left: 60%;
+    transform: translateX(105%);;
   }
   100% {
-    left: 10%;
+    transform: translateX(-5%);
   }
 }
 
@@ -349,8 +352,4 @@
     // top: -30%;
     // left: -19%;
   }
-}
-
-.gradient-mission {
-  z-index: 1;
 }

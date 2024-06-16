@@ -1,7 +1,5 @@
 .banner-container {
   position: relative;
-  // width: 100%;
-  // height: 632px;
   box-sizing: border-box;
   margin: 0px 12px;
   overflow: hidden;
@@ -13,8 +11,6 @@
 
     .banner-content-wrapper {
       position: absolute;
-      // height: 100%;
-      // width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,7 +18,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
       .banner-content {
-        // width: 50%;
         p {
           text-align: center;
           font-weight: 600;
@@ -40,7 +35,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .banner-container {
+    margin: 56px 16px;
     .banner-section-wrapper {
+      height: 488px;
       .banner-content-wrapper {
         .banner-content {
           p {
@@ -55,7 +52,10 @@
 
 @media screen and (max-width: 767px) {
   .banner-container {
+    margin-right: 16px !important;
+    margin-left: 16px !important;
     .banner-section-wrapper {
+      height: 328px;
       .banner-content-wrapper {
         .banner-content {
           p {

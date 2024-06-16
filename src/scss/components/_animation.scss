@@ -7,7 +7,7 @@
   &.circle-absolute {
     position: absolute;
     bottom: -15%;
-    right: -10%;
+    right: -13%;
   }
 
   &.circle-center {
@@ -49,16 +49,16 @@
     transform: translateX(20%);
   }
   100% {
-    transform: translateX(45%);
+    transform: translateX(50%);
   }
 }
 @keyframes float-left {
   0% {
-    transform: translateX(-30%);
+    transform: translateX(-20%);
     transition: ease-out 2s;
   }
   100% {
-    transform: translateX(-55%);
+    transform: translateX(-50%);
     transition: ease-out 2s;
   }
 }
@@ -183,15 +183,15 @@
       width: 200px;
       height: 200px;
     }
+    &.circle-medium {
+      width: 200px;
+      height: 200px;
+    }
     &.circle-small {
       width: 32px;
       height: 32px;
     }
   }
 
-  .circle-container-v2 {
-    &.responsive {
-      margin-left: 33%;
-    }
-  }
+  
 }

@@ -1,7 +1,11 @@
+@use "sass:map";
+@import "./color";
+
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
 
   .website-name {
     font-size: 24px;
@@ -28,10 +32,24 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .header {
-    .navigation {
-      display: none;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navMenu-btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid map.get($colors, "primary-500");
+    border-radius: 50%;
+    text-align: center;
+
+    img {
+      display: block;
+      max-width: 55%;
+      margin: auto;
+      transform: scaleX(-1);
     }
   }
 
@@ -54,7 +72,39 @@
     width: 20%;
   }
 }
+@media screen and (max-width: 1279px) {
+  #header-navigation-menu {
+    display: initial;
+  }
 
+  .header {
+    padding: 10px 30px;
+    justify-content: space-between;
+
+    .navigation {
+      display: none;
+    }
+  }
+
+  .header-nav {
+    gap: 20px;
+  }
+
+  .navMenu-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid map.get($colors, "primary-500");
+    border-radius: 50%;
+    text-align: center;
+
+    img {
+      display: block;
+      max-width: 55%;
+      margin: auto;
+      transform: scaleX(-1);
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   #header-contactBtn {
     display: none;
@@ -64,19 +114,5 @@
     .navigation {
       display: none;
     }
-  }
-
-  #header-navigation-menu {
-    display: initial;
-  }
-
-  .modal-wrapper {
-    .modal-large {
-      left: 4vw;
-    }
-  }
-
-  .modal-navigation-menu {
-    text-align: center;
   }
 }

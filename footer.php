@@ -69,7 +69,7 @@
 
     <div class="footer-back-to-top-btn">
       <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" href="#" class="stoked-button neutral-color text-uppercase">
-        Back to the top <i class="fa-solid fa-arrow-up"></i>
+        Back to top <i class="fa-solid fa-arrow-up"></i>
       </button>
     </div>
   </div>

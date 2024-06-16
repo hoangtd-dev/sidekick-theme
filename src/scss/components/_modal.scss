@@ -1,3 +1,6 @@
+@use "sass:map";
+@import "./color";
+
 /* modal */
 .modal-wrapper {
   z-index: 10000;
@@ -14,14 +17,17 @@
     z-index: 10001;
     position: absolute;
     background-color: white;
-    border-radius: 26px;
-    padding: 25px;
+    border-radius: 24px;
+    padding: 48px;
   }
 
   .modal-medium {
+    display: flex;
+    flex-direction: column;
     width: 40vw;
-    top: 20%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
   }
 
   .modal-large {
@@ -32,21 +38,40 @@
 }
 
 .modal-closeBtn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid map.get($colors, "primary-500");
+  border-radius: 500px;
+  color: map.get($colors, "primary-500");
 }
 /* End Modal */
 
-.modal-navigation-menu {
+.navMenu-logo {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.navMenu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navMenu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.modal-navigation-menu a {
+.navMenu-item {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+a {
   text-decoration: none;
   color: black;
 }
@@ -56,12 +81,12 @@
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
   .modal-wrapper .modal-large {
     left: 4vw;
   }
 
-  .modal-navigation-menu {
+  .navMenu-list {
     text-align: center;
   }
 }
