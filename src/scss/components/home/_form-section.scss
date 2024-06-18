@@ -56,7 +56,7 @@
   }
 }
 
-.form-interest {
+.form-service {
   position: relative;
   select {
     appearance: none; /* Remove default arrow */
@@ -83,7 +83,7 @@
 
 .form-industry,
 .form-message,
-.form-interest {
+.form-service {
   grid-column: span 2;
 }
 
@@ -139,7 +139,7 @@ textarea.select2-search__field {
   font-family: "Be Vietnam Pro" !important;
 }
 
-.form-interest {
+.form-service {
   img {
     width: 32px;
     height: 32px;
@@ -191,7 +191,7 @@ textarea.select2-search__field {
   }
   .form-industry,
   .form-message,
-  .form-interest {
+  .form-service {
     grid-column: span 1;
   }
 

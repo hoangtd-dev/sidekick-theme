@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // multiple choice select
 
 $(document).ready(function () {
-  $("#finterest").select2({
+  $("#fservice").select2({
     placeholder: "Select services",
     allowClear: true,
     closeOnSelect: false, // Keep the dropdown open after selecting an item

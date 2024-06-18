@@ -34,9 +34,9 @@
                 <textarea id="fmessage" name="fmessage" class="field-message" style="height: 118px"
                     placeholder="Share a detailed overview of your project, including its goals, scope, target audience, timeline, and any specific requirements or challenges. This information helps us understand your needs and tailor our support to ensure your project's success​."></textarea>
             </div>
-            <div class="form-interest">
-                <label for="finterest" class="field-title">Which SIDEKICK Services Are You Interested In?</label>
-                <select id="finterest" name="finterest[]" class="field-interest" multiple>
+            <div class="form-service">
+                <label for="fservice" class="field-title">Which SIDEKICK Services Are You Interested In?</label>
+                <select id="fservice" name="fservice[]" class="field-service" multiple>
                     <option class="text-uppercase" value="media-strategy&management">Media Strategy & Management
                     </option>
                     <option class="text-uppercase" value="branding&communication">Branding & Communication</option>
