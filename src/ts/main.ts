@@ -1,6 +1,7 @@
 import * as $ from "jquery";
 import "slick-carousel";
 import * as Hammer from "hammerjs";
+import "select2";
 
 setTimeout(() => {
   const navigationMenuModal = document.getElementById("modal-navigationMenu");
@@ -283,3 +284,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // end member slider
+
+// multiple choice select
+
+$(document).ready(function () {
+  $("#finterest").select2({
+    placeholder: "Select services",
+    allowClear: true,
+    closeOnSelect: false, // Keep the dropdown open after selecting an item
+    width: "100%",
+  });
+});
+// end multiple choice select

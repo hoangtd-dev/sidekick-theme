@@ -42,9 +42,9 @@
 								generate leads.​</p>
 						</div>
 					</div>
-					<div class="task-details-action">
+					<button class="task-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 				<div class="task-item">
 					<div class="task-detail-wrapper">
@@ -79,9 +79,9 @@
 								Registration, etc.) initiatives​.​</p>
 						</div>
 					</div>
-					<div class="task-details-action">
+					<button class="task-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 				<div class="task-item">
 					<div class="task-detail-wrapper">
@@ -99,9 +99,9 @@
 								for the real estate project​.</p>
 						</div>
 					</div>
-					<div class="task-details-action">
+					<button class="task-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 				<div class="task-item">
 					<div class="task-detail-wrapper">
@@ -117,9 +117,9 @@
 								funnel activities to strengthen brand awareness and favorability​.​</p>
 						</div>
 					</div>
-					<div class="task-details-action">
+					<button class="task-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 				<div class="task-item">
 					<div class="task-detail-wrapper">
@@ -134,9 +134,9 @@
 								business verticals, and we plan to continue expanding in the future​.​</p>
 						</div>
 					</div>
-					<div class="task-details-action">
+					<button class="task-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>

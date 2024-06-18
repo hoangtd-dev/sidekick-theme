@@ -106,7 +106,7 @@
       color: map.get($colors, "white");
     }
 
-    .slider-description-circle{
+    .slider-description-circle {
       width: 8px;
       height: 8px;
       background-color: #ffffff;
@@ -186,7 +186,7 @@
 @media screen and (max-width: 767px) {
   .introduction-slider {
     .slider-img {
-        height: 576px;
+      height: 576px;
     }
     .slider-content {
       width: 95%;
@@ -197,11 +197,15 @@
     }
 
     .slider-description {
-      bottom: 40%;
-
+      bottom: 25%;
+      align-items: flex-start;
+      flex-direction: column;
       .content {
         font-size: 12px;
         line-height: 20px;
+      }
+      &-circle{
+        display: none;
       }
     }
 

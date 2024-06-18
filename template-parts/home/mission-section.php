@@ -45,11 +45,12 @@
 							amplify
 							your brand’s presence and assist in driving business impact​.</p>
 					</div>
-					<div class="mission-details-action">
+					<button class="mission-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 			</div>
+
 			<!-- end item 1 -->
 
 			<!-- item 2 -->
@@ -74,9 +75,9 @@
 							achieve
 							business objectives​.</p>
 					</div>
-					<div class="mission-details-action">
+					<button class="mission-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 			</div>
 			<!-- end item 2 -->
@@ -106,9 +107,9 @@
 								utilization​.
 							</p>
 						</div>
-						<div class="mission-details-action">
+						<button class="mission-details-action">
 							<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-						</div>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -137,9 +138,9 @@
 							that enhance your digital interface and customer interaction​.
 						</p>
 					</div>
-					<div class="mission-details-action">
+					<button class="mission-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 			</div>
 			<!-- end item 4 -->
@@ -166,9 +167,9 @@
 							inform
 							business strategies and foster growth​,</p>
 					</div>
-					<div class="mission-details-action">
+					<button class="mission-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 			</div>
 			<!-- end item 5 -->
@@ -194,9 +195,9 @@
 					</p>
 					<p class="mission-details-content">Offer customized solutions tailored to each client's unique needs
 						and circumstances.</p>
-					<div class="mission-details-action">
+					<button class="mission-details-action">
 						<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-					</div>
+					</button>
 				</div>
 
 			</div>

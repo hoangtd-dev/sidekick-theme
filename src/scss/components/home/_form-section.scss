@@ -52,6 +52,7 @@
   textarea {
     padding: 16px 32px;
     font-family: inherit;
+    caret-color: transparent;
   }
 }
 
@@ -69,7 +70,8 @@
   }
 
   &::after {
-    content: "▼";
+    // content: "▼";
+
     position: absolute;
     top: 60%;
     right: 20px;
@@ -85,12 +87,100 @@
   grid-column: span 2;
 }
 
+textarea.select2-search__field {
+  cursor: pointer;
+}
+
+.select2-container--default .select2-selection--multiple {
+  font-family: "Be Vietnam Pro" !important;
+  min-height: 56px !important;
+  background-color: #f8f9f9 !important;
+  border-radius: 8px !important;
+  margin-top: 6px !important;
+  padding: 10px 32px !important;
+  border: none !important;
+  .select2-selection__choice {
+    padding: 5px !important;
+    border-radius: 15px !important;
+    background-color: $white !important;
+  }
+
+  .select2-selection__choice__remove {
+    position: relative !important;
+  }
+
+  .select2-selection__choice__display {
+    padding-left: 5px !important;
+  }
+}
+
+/* Custom styles for Select2 */
+.select2-container--default .select2-results__option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select2-results__option--selected::after {
+  content: "✔";
+  color: map.get($colors, "primary-400");
+  margin-left: 10px;
+  float: right;
+}
+
+// .select2-search--inline,
+.select2-selection__clear {
+  display: none;
+}
+
+.select2-selection__choice__display {
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  font-family: "Be Vietnam Pro" !important;
+}
+
+.form-interest {
+  img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translate(-50%, -130%);
+    color: blue;
+    pointer-events: none;
+  }
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+  a {
+    text-decoration: underline;
+  }
+}
+
 @media screen and (min-width: 788px) and (max-width: 1279px) {
   .site-main {
     .form-container {
       margin: 56px 16px 0px 16px;
     }
   }
+}
+
+.select2-search .select2-search--inline {
+  width: 100%;
+  display: block;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.select2-selection .select2-selection--multiple .select2-selection--clearable {
+  // min-height: 56px;
+  width: 100%;
 }
 
 @media screen and (max-width: 787px) {
@@ -141,6 +231,18 @@
           height: 168px !important;
         }
       }
+    }
+    .select2-selection__choice__display {
+      font-size: 12px !important;
+    }
+  }
+  .form-footer {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+
+    .form-button{
+      padding: 16px 48px;
     }
   }
 }

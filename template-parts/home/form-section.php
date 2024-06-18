@@ -1,4 +1,6 @@
-<form id="form-section" class="form-container">
+<form id="form-section" class="form-container" method="post"
+    action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+    <?php wp_nonce_field('custom_form_nonce', 'custom_form_nonce_field'); ?>
     <div class="form-section-wrapper">
         <div class="form-title">
             <h3>Hey! Tell Us All The Things</h3>
@@ -34,20 +36,25 @@
             </div>
             <div class="form-interest">
                 <label for="finterest" class="field-title">Which SIDEKICK Services Are You Interested In?</label>
-                <select type="text" id="finterest" name="finterest" class="field-interest">
-                    <option class="text-uppercase" value="media-strategy&management">media strategy & management
+                <select id="finterest" name="finterest[]" class="field-interest" multiple>
+                    <option class="text-uppercase" value="media-strategy&management">Media Strategy & Management
                     </option>
-                    <option class="text-uppercase" value="branding&communication">branding & communication</option>
-                    <option class="text-uppercase" value="digital-transformation">digital transformation</option>
-                    <option class="text-uppercase" value="website&app-development">website & app development</option>
-                    <option class="text-uppercase" value="marketing-data-analytics">marketing data analytics</option>
-                    <option class="text-uppercase" value="custom-solutions">custom solutions</option>
+                    <option class="text-uppercase" value="branding&communication">Branding & Communication</option>
+                    <option class="text-uppercase" value="digital-transformation">Digital Transformation</option>
+                    <option class="text-uppercase" value="website&app-development">Website & App Development</option>
+                    <option class="text-uppercase" value="marketing-data-analytics">Marketing Data Analytics</option>
+                    <option class="text-uppercase" value="custom-solutions">Custom Solutions</option>
                 </select>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/down.png" alt="">
             </div>
         </div>
+        <input type="hidden" name="action" value="handle_form_submission">
         <div class="form-footer">
-            <div class="form-sk-email"></div>
-            <button class="form-button"></button>
+            <div class="form-sk-email">Our email <a href="mailto:info@sidekick.vn">info@sidekick.vn</a></div>
+            <button type="submit" value="Send Request" class="flat-button form-button primary-color text-uppercase">
+                <span>Submit</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
         </div>
     </div>
 </form>

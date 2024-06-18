@@ -102,23 +102,23 @@
             color: map-get($colors, "neutral-400");
           }
         }
-        .task-details-action {
-          display: flex;
-          justify-content: end;
-          padding: 32px;
-
-          a {
-            border-radius: 56%;
-            width: 56px;
-            height: 56px;
-            background-color: $white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: rotate(-45deg);
-          }
-        }
       }
+    }
+  }
+  .task-details-action {
+    display: flex;
+    justify-content: end;
+    padding: 32px;
+
+    a {
+      border-radius: 56%;
+      width: 56px;
+      height: 56px;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(-45deg);
     }
   }
 }
@@ -219,6 +219,13 @@
               font-size: 16px;
               line-height: 24px;
               color: map-get($colors, "neutral-400");
+            }
+          }
+          .task-details-action {
+            a {
+              background-color: map.get($colors, "primary-500");
+              color: $white;
+              transform: rotate(0deg);
             }
           }
         }

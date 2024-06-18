@@ -245,9 +245,9 @@
 
           .mission-details-action {
             a {
-              border-radius: 56%;
-              width: 56px;
-              height: 56px;
+              background-color: map.get($colors, "primary-500");
+              color: $white;
+              transform: rotate(0deg);
             }
           }
         }
