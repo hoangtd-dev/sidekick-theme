@@ -5,6 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const config = {
   entry: {
     main: ["./src/ts/main.ts", "./src/scss/main.scss"],
+    home: ["./src/scss/home.scss"],
+    thankYou: ["./src/scss/thank-you.scss"],
   },
   output: {
     path: path.resolve(__dirname, "assets"),

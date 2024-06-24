@@ -1,0 +1,1 @@
+{"version":3,"file":"thankYou.css","mappings":"AAAA,KACE,qB","sources":["webpack://empty-project/./src/scss/thank-you.scss"],"sourcesContent":["body {\n  background-color: red;\n}\n"],"names":[],"sourceRoot":""}
