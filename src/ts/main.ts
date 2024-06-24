@@ -3,6 +3,7 @@ import "slick-carousel";
 import * as Hammer from "hammerjs";
 import "select2";
 
+
 setTimeout(() => {
   const navigationMenuModal = document.getElementById("modal-navigationMenu");
 
@@ -181,109 +182,109 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // end skills slider
 
-// member slider
-document.addEventListener("DOMContentLoaded", () => {
-  const members = document.querySelectorAll(".member-slider-btn");
-  const items = document.querySelectorAll(".member-item");
-  const memberSliderContainer = document.getElementById("member-slider");
-  if (!memberSliderContainer) return;
+// // member slider
+// document.addEventListener("DOMContentLoaded", () => {
+//   const members = document.querySelectorAll(".member-slider-btn");
+//   const items = document.querySelectorAll(".member-item");
+//   const memberSliderContainer = document.getElementById("member-slider");
+//   if (!memberSliderContainer) return;
 
-  members.forEach((member) => {
-    member.addEventListener("click", () => {
-      const targetId = member.getAttribute("data-target");
-      if (!targetId) return;
-      const targetItem = document.getElementById(targetId);
-      if (!targetItem) return;
-      items.forEach((item) => item.classList.remove("active"));
-      members.forEach((member) => member.classList.remove("active"));
+//   members.forEach((member) => {
+//     member.addEventListener("click", () => {
+//       const targetId = member.getAttribute("data-target");
+//       if (!targetId) return;
+//       const targetItem = document.getElementById(targetId);
+//       if (!targetItem) return;
+//       items.forEach((item) => item.classList.remove("active"));
+//       members.forEach((member) => member.classList.remove("active"));
 
-      targetItem.classList.add("active");
-      member.classList.add("active");
+//       targetItem.classList.add("active");
+//       member.classList.add("active");
 
-      const targetIndex = Array.from(items).indexOf(targetItem);
+//       const targetIndex = Array.from(items).indexOf(targetItem);
 
-      memberSliderContainer.scroll({
-        left:
-          targetItem.offsetLeft -
-          (memberSliderContainer.clientWidth - targetItem.clientWidth) / 2,
-        behavior: "smooth",
-      });
-    });
-  });
+//       memberSliderContainer.scroll({
+//         left:
+//           targetItem.offsetLeft -
+//           (memberSliderContainer.clientWidth - targetItem.clientWidth) / 2,
+//         behavior: "smooth",
+//       });
+//     });
+//   });
 
-  // Highlight the btn when item is scrolled into view
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          items.forEach((item) => item.classList.remove("active"));
-          members.forEach((member) => member.classList.remove("active"));
+//   // Highlight the btn when item is scrolled into view
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           items.forEach((item) => item.classList.remove("active"));
+//           members.forEach((member) => member.classList.remove("active"));
 
-          entry.target.classList.add("active");
-          const activeMember = Array.from(members).find(
-            (member) => member.getAttribute("data-target") === entry.target.id
-          );
-          if (!activeMember) return;
-          activeMember.classList.add("active");
-        }
-      });
-    },
-    {
-      threshold: 0.5,
-    }
-  );
+//           entry.target.classList.add("active");
+//           const activeMember = Array.from(members).find(
+//             (member) => member.getAttribute("data-target") === entry.target.id
+//           );
+//           if (!activeMember) return;
+//           activeMember.classList.add("active");
+//         }
+//       });
+//     },
+//     {
+//       threshold: 0.5,
+//     }
+//   );
 
-  items.forEach((item) => observer.observe(item));
+//   items.forEach((item) => observer.observe(item));
 
-  // swift hammer.js
+//   // swift hammer.js
 
-  const hammer = new Hammer(memberSliderContainer);
-  if (!hammer) return;
-  hammer.on("swipeleft", () => {
-    const activeItem = document.querySelector(
-      ".member-item.active"
-    ) as HTMLElement;
-    if (!activeItem) return;
-    const nextItem = (activeItem.nextElementSibling as HTMLElement) || items[0];
-    nextItem.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
-    updateActiveState(nextItem);
-  });
+//   const hammer = new Hammer(memberSliderContainer);
+//   if (!hammer) return;
+//   hammer.on("swipeleft", () => {
+//     const activeItem = document.querySelector(
+//       ".member-item.active"
+//     ) as HTMLElement;
+//     if (!activeItem) return;
+//     const nextItem = (activeItem.nextElementSibling as HTMLElement) || items[0];
+//     nextItem.scrollIntoView({
+//       behavior: "smooth",
+//       block: "nearest",
+//       inline: "center",
+//     });
+//     updateActiveState(nextItem);
+//   });
 
-  hammer.on("swiperight", () => {
-    const activeItem = document.querySelector(".member-item.active");
-    if (!activeItem) return;
-    const prevItem =
-      (activeItem.previousElementSibling as HTMLElement) ||
-      items[items.length - 1];
-    prevItem.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
+//   hammer.on("swiperight", () => {
+//     const activeItem = document.querySelector(".member-item.active");
+//     if (!activeItem) return;
+//     const prevItem =
+//       (activeItem.previousElementSibling as HTMLElement) ||
+//       items[items.length - 1];
+//     prevItem.scrollIntoView({
+//       behavior: "smooth",
+//       block: "nearest",
+//       inline: "center",
+//     });
 
-    updateActiveState(prevItem);
-  });
+//     updateActiveState(prevItem);
+//   });
 
-  function updateActiveState(targetItem: HTMLElement) {
-    items.forEach((item) => item.classList.remove("active"));
-    members.forEach((member) => member.classList.remove("active"));
+//   function updateActiveState(targetItem: HTMLElement) {
+//     items.forEach((item) => item.classList.remove("active"));
+//     members.forEach((member) => member.classList.remove("active"));
 
-    targetItem.classList.add("active");
-    const activeButton = Array.from(members).find(
-      (member) => member.getAttribute("data-target") === targetItem.id
-    );
+//     targetItem.classList.add("active");
+//     const activeButton = Array.from(members).find(
+//       (member) => member.getAttribute("data-target") === targetItem.id
+//     );
 
-    if (activeButton) {
-      activeButton.classList.add("active");
-    }
-  }
-});
+//     if (activeButton) {
+//       activeButton.classList.add("active");
+//     }
+//   }
+// });
 
-// end member slider
+// // end member slider
 
 // multiple choice select
 
@@ -296,3 +297,59 @@ $(document).ready(function () {
   });
 });
 // end multiple choice select
+
+// member experience modal
+document.addEventListener("DOMContentLoaded", () => {
+  // Get the modal element
+  const modal = document.getElementById("experienceModal") as HTMLElement;
+
+  // Get the <span> element that closes the modal
+  const span = document.getElementsByClassName("close")[0] as HTMLElement;
+
+  // Get the text element inside the modal
+  const experienceText = document.getElementById(
+    "experienceText"
+  ) as HTMLElement;
+
+  const nameText = document.getElementsByClassName(
+    "modal-member-name"
+  )[0] as HTMLAnchorElement;
+  const titleText = document.getElementsByClassName(
+    "modal-member-title"
+  )[0] as HTMLAnchorElement;
+
+  // Get all the cards and add click event
+  document.querySelectorAll(".member-item").forEach((card) => {
+    card.addEventListener("click", () => {
+      const name = (card as HTMLElement).getElementsByClassName(
+        "member-name"
+      )[0].textContent;
+      if (name) {
+        nameText.textContent = name;
+      }
+      const title = (card as HTMLElement).getElementsByClassName(
+        "member-title"
+      )[0].textContent;
+      if (title) {
+        titleText.textContent = title;
+      }
+      const experience = (card as HTMLElement).getAttribute("data-experience");
+      if (experience) {
+        experienceText.textContent = experience;
+        modal.style.display = "block";
+      }
+    });
+  });
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event: MouseEvent) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+});

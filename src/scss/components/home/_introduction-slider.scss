@@ -80,7 +80,7 @@
       font-size: 72px;
       line-height: 72px;
       font-weight: 500;
-      letter-spacing: -3px;
+      letter-spacing: -1px;
     }
   }
 
@@ -127,7 +127,8 @@
 }
 
 .slick-dots {
-  display: flex;
+  // display: flex;
+  display: none !important;
   position: absolute;
   top: 40px;
   left: 97px;
@@ -167,7 +168,7 @@
     .slider-content {
       width: 90%;
       .title {
-        font-size: 56px;
+        font-size: 48px;
         line-height: 60px;
       }
     }
@@ -191,8 +192,8 @@
     .slider-content {
       width: 95%;
       .title {
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 36px;
+        line-height: 40px;
       }
     }
 
@@ -204,19 +205,34 @@
         font-size: 12px;
         line-height: 20px;
       }
-      &-circle{
+      &-circle {
         display: none;
       }
     }
 
+    .slider-button {
+      padding: 15px 20px;
+      span {
+        padding-left: 0;
+      }
+    }
     .slider-action {
-      width: 168px;
-      height: 40px;
       bottom: 5%;
-      right: 0;
-      left: 7%;
-
       font-size: 14px;
+    }
+  }
+  .slick-dots {
+    top: 20px;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .introduction-slider .slider-content {
+    top: 25%;
+
+    .circle-container {
+      display: none;
     }
   }
 }

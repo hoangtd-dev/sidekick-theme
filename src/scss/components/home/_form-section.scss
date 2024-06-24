@@ -46,11 +46,11 @@
     background-color: #f8f9f9;
     border-radius: 8px;
     margin-top: 6px;
-    padding: 0 32px;
+    padding: 0 16px;
   }
 
   textarea {
-    padding: 16px 32px;
+    padding: 16px;
     font-family: inherit;
     caret-color: transparent;
   }
@@ -183,6 +183,11 @@ textarea.select2-search__field {
   width: 100%;
 }
 
+.select2-dropdown--below {
+  transform: translateY(32px);
+  background-color: #f8f9f9 !important;
+}
+
 @media screen and (max-width: 787px) {
   .site-main {
     .form-container {
@@ -241,8 +246,11 @@ textarea.select2-search__field {
     flex-direction: column;
     gap: 20px;
 
-    .form-button{
+    .form-button {
       padding: 16px 48px;
     }
+  }
+  .select2-dropdown--below {
+    transform: translateY(48px);
   }
 }

@@ -30,7 +30,7 @@
 		<div id="skills-slider" class="skills-section">
 			<div class="skills-item" id="skills-item1">
 				<div class="skills-icon">
-					<i class="fa-solid fa-users-viewfinder"></i>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/security-system.png" alt="">
 				</div>
 				<p class="skills-title text-uppercase">quality</p>
 				<p class="skills-description">We hold our work to the highest standards, ensuring every project meets
@@ -39,7 +39,7 @@
 			</div>
 			<div class="skills-item" id="skills-item2">
 				<div class="skills-icon">
-					<i class="fa-solid fa-users-viewfinder"></i>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/workgroup.png" alt="">
 				</div>
 				<p class="skills-title text-uppercase">collaboration</p>
 				<p class="skills-description">Our approach is hands-on and inclusive, involving clients at every step.
@@ -49,7 +49,7 @@
 			</div>
 			<div class="skills-item" id="skills-item3">
 				<div class="skills-icon">
-					<i class="fa-solid fa-users-viewfinder"></i>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/rocket.png" alt="">
 				</div>
 				<p class="skills-title text-uppercase">innovation</p>
 				<p class="skills-description">We constantly explore new ideas and technologies to keep your strategies
@@ -66,113 +66,143 @@
 		</div>
 		<div class="member-list">
 			<div class="member-list-grid" id="member-slider">
-				<div class="member-item"  id="member-item1">
+				<div class="member-item" id="member-item1" data-experience="Our Founder combines over 7 years of expertise in digital marketing, mar-tech, and
+								business
+								operations. His leadership is rooted in experience with technology startups and digital
+								agencies, emphasizing strong management, training capabilities, driving business
+								success.​">
 					<div class="member-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/member/profile-pic_Son.png"
 							alt="">
 					</div>
 					<div class="member-desc">
 						<div class="member-intro">
 							<span class="member-name">Son Nguyen</span>
 							<span class="member-title">Founder</span>
-							<p class="member-exp">
+							<!-- <p class="member-exp">
 								Our Founder combines over 7 years of expertise in digital marketing, mar-tech, and
 								business
 								operations. His leadership is rooted in experience with technology startups and digital
 								agencies, emphasizing strong management, training capabilities, driving business
 								success.​
-							</p>
+							</p> -->
 						</div>
 
 					</div>
 				</div>
-				<div class="member-item" id="member-item2">
+				<div class="member-item" id="member-item2" data-experience="Our Client Relationship Manager offers 7 years of expertise in digital marketing and
+								brand
+								building. Having worked on both agency and client sides, he excels in fostering strong
+								relationships and managing client needs effectively.​​">
 					<div class="member-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/member/profile-pic_Khoi.png"
 							alt="">
 					</div>
 					<div class="member-desc">
 						<div class="member-intro">
 							<span class="member-name">Khoi Tran</span>
 							<span class="member-title">Client Relationships</span>
-							<p class="member-exp">
+							<!-- <p class="member-exp">
 								Our Client Relationship Manager offers 7 years of expertise in digital marketing and
 								brand
 								building. Having worked on both agency and client sides, he excels in fostering strong
 								relationships and managing client needs effectively.​​
-							</p>
+							</p> -->
 						</div>
 
 					</div>
 				</div>
-				<div class="member-item" id="member-item3">
+				<div class="member-item" id="member-item3" data-experience="With 7 years of experience in marketing and extensive portfolio across various
+								industries, our
+								IMC Planning Manager excels in crafting comprehensive media communication and social
+								strategies
+								that enhances brand-customer relationships.​">
 					<div class="member-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/member/profile-pic_Thu.png"
 							alt="">
 					</div>
 					<div class="member-desc">
 						<div class="member-intro">
 							<span class="member-name">Thu Nguyen</span>
 							<span class="member-title">Integrated Planning</span>
-							<p class="member-exp">
+							<!-- <p class="member-exp">
 								With 7 years of experience in marketing and extensive portfolio across various
 								industries, our
 								IMC Planning Manager excels in crafting comprehensive media communication and social
 								strategies
 								that enhances brand-customer relationships.​
-							</p>
+							</p> -->
 						</div>
 
 					</div>
 				</div>
-				<div class="member-item" id="member-item4">
+				<div class="member-item" id="member-item4" data-experience="Bringing 12 years of experience in marketing, our Industry Advisor is skilled in
+								navigating both
+								client and agency landscapes. His comprehensive knowledge in business operations and
+								team
+								management ensures effective processes and development.​">
 					<div class="member-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/member/profile-pic_Trong.png"
 							alt="">
 					</div>
 					<div class="member-desc">
 						<div class="member-intro">
 							<span class="member-name">Trong Nguyen</span>
 							<span class="member-title">Industry Advisor</span>
-							<p class="member-exp">
+							<!-- <p class="member-exp">
 								Bringing 12 years of experience in marketing, our Industry Advisor is skilled in
 								navigating both
 								client and agency landscapes. His comprehensive knowledge in business operations and
 								team
 								management ensures effective processes and development.​
-							</p>
+							</p> -->
 						</div>
 
 					</div>
 				</div>
-				<div class="member-item" id="member-item5">
+				<div class="member-item" id="member-item5" data-experience="With 14 years of technical expertise and leadership roles including CEO and CTO in
+								multinational
+								companies and startups, our Technology Advisor excels in creating robust solutions
+								tailored for
+								ad-tech and mar-tech, understanding deeply the challenges businesses face.​">
 					<div class="member-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/tasks/task-image-7.jpg"
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/home/member/profile-pic_Hien.png"
 							alt="">
 					</div>
 					<div class="member-desc">
 						<div class="member-intro">
 							<span class="member-name">Hien Le</span>
-							<span class="member-title">Technical Advisor</span>
-							<p class="member-exp">
+							<span class="member-title">Technology Advisor</span>
+							<!-- <p class="member-exp">
 								With 14 years of technical expertise and leadership roles including CEO and CTO in
 								multinational
-								companies and startups, our Technical Advisor excels in creating robust solutions
+								companies and startups, our Technology Advisor excels in creating robust solutions
 								tailored for
 								ad-tech and mar-tech, understanding deeply the challenges businesses face.​
-							</p>
+							</p> -->
 						</div>
 
 					</div>
 				</div>
 			</div>
-			<div class="member-slider-btns">
-			<button class="member-slider-btn active" data-target="member-item1"></button>
-			<button class="member-slider-btn" data-target="member-item2"></button>
-			<button class="member-slider-btn" data-target="member-item3"></button>
-			<button class="member-slider-btn" data-target="member-item4"></button>
-			<button class="member-slider-btn" data-target="member-item5"></button>
-		</div>
+
+			<div id="experienceModal" class="modal-wrapper hide">
+				<div class="modal modal-medium">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<span class="modal-member-name"></span>
+						<span class="modal-member-title"></span>
+						<p id="experienceText"></p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="member-slider-btns">
+				<button class="member-slider-btn active" data-target="member-item1"></button>
+				<button class="member-slider-btn" data-target="member-item2"></button>
+				<button class="member-slider-btn" data-target="member-item3"></button>
+				<button class="member-slider-btn" data-target="member-item4"></button>
+				<button class="member-slider-btn" data-target="member-item5"></button>
+			</div> -->
 		</div>
 	</div>
 </section>

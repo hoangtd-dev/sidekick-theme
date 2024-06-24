@@ -23,9 +23,9 @@
 			</div>
 		</div>
 		<div class="identity-title-section">
-			<p class="title text-uppercase">Built on experience, <br>we prioritize client success</p>
-			<p class="description">we cherish every opportunity to collaborate by consistently <br>delivering top-notch
-				solutions and quality work to each client, <br>aiming to drive the growth of their businesses.</p>
+			<p class="title text-uppercase">Built on experience, we prioritize client success</p>
+			<p class="description">we cherish every opportunity to collaborate by consistently delivering top-notch
+				solutions and quality work to each client, aiming to drive the growth of their businesses.</p>
 		</div>
 		<div class="achievement">
 			<div class="achievement-item">

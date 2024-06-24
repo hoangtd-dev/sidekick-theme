@@ -3,82 +3,17 @@
 
 .introduction-gradient-background-v3 {
   height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
+  // width: 100%;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
   transform: translateY(-33%);
-  bottom: 0;
+  // bottom: 0;
   // overflow: hidden;
 }
 
 .border-radius-24 {
   border-radius: 24px;
-}
-
-.introduction-gradient-background {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-
-  &.border-radius-24 {
-    border-radius: 24px;
-  }
-
-  div:nth-child(3) {
-    position: absolute;
-    border-radius: 30%;
-    height: 120%;
-    width: 85%;
-    left: -20%;
-    top: -10%;
-    background-color: map.get($colors, "primary-200");
-    animation: gradient 4s infinite;
-    animation-delay: 4s;
-  }
-
-  div:nth-child(2) {
-    position: absolute;
-    border-radius: 38%;
-    height: 110%;
-    width: 60%;
-    top: -30%;
-    right: -8%;
-    background-color: map.get($colors, "primary-400");
-    animation: gradient 4s infinite;
-    animation-delay: 2s;
-  }
-
-  div:nth-child(1) {
-    position: absolute;
-    border-radius: 50%;
-    height: calc(100% * 918/1416);
-    width: calc(100% * 918/1416);
-    bottom: -25%;
-    right: -10%;
-    background-color: map.get($colors, "secondary-400");
-    animation: gradient 4s infinite;
-    animation-delay: 1s;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(80px);
-  }
-}
-
-@keyframes gradient {
-  70% {
-    transform: scale(1.5) translate(50px);
-  }
 }
 
 .gradient-background-v2 {
@@ -130,24 +65,22 @@
     transform: translateX(-5%);
   }
   50% {
-    transform: translateX(105%);;
+    transform: translateX(105%);
   }
   100% {
     transform: translateX(-5%);
   }
 }
 
-
 // gradient-background-v3
 
-.gradient-circle{
+.gradient-circle {
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
-  
 }
 
-.gradient-circle:nth-child(1){
+.gradient-circle:nth-child(1) {
   width: 65%;
   height: 134%;
   top: -25%;
@@ -157,7 +90,7 @@
   animation: scaleCircle1 8s infinite ease;
 }
 
-.gradient-circle:nth-child(2){
+.gradient-circle:nth-child(2) {
   width: 79%;
   height: 163%;
   top: -35%;
@@ -167,7 +100,7 @@
   animation: scaleCircle2 8s infinite ease;
 }
 
-.gradient-circle:nth-child(3){
+.gradient-circle:nth-child(3) {
   width: 45%;
   height: 93%;
   top: 45%;
@@ -177,7 +110,7 @@
   animation: scaleCircle3 8s infinite ease;
 }
 
-.gradient-circle:nth-child(4){
+.gradient-circle:nth-child(4) {
   width: 45%;
   height: 93%;
   top: 45%;
@@ -187,7 +120,7 @@
   animation: scaleCircle4 8s infinite ease;
 }
 
-.gradient-circle:nth-child(5){
+.gradient-circle:nth-child(5) {
   width: 112%;
   height: 230%;
   top: -24%;
@@ -198,34 +131,35 @@
   animation: scaleCircle5 8s infinite ease;
 }
 
-.gradient-circle:nth-child(6){
+.gradient-circle:nth-child(6) {
   width: 107%;
   height: 220%;
   top: -25%;
   left: -25%;
-  background: rgba(map.get($colors, "primary-200"), .7);
+  background: rgba(map.get($colors, "primary-200"), 0.7);
   mix-blend-mode: overlay;
   animation: scaleCircle6 8s infinite ease;
 }
 
 @keyframes scaleCircle1 {
-  0%, 100% {
-    transform: scale(1) translate(0,0);
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
   }
   33% {
-    transform: scale(calc(1116/918)) translate(3%,10%);
+    transform: scale(calc(1116 / 918)) translate(3%, 10%);
     // scale: calc(1116/918);
     // top: -15%;
     // left: 60%;
   }
   50% {
-    transform: scale(calc(1015/918)) translate(-2%,29%);
+    transform: scale(calc(1015 / 918)) translate(-2%, 29%);
     // scale: calc(1015/918);
     // top: 4%;
     // left: 55%;
   }
   75% {
-    transform: scale(calc(1045/918)) translate(21%,5%);
+    transform: scale(calc(1045 / 918)) translate(21%, 5%);
     // scale: calc(1045/918);
     // top: -4%;
     // left: 62%;
@@ -233,25 +167,26 @@
 }
 
 @keyframes scaleCircle2 {
-  0%, 100% {
-    transform: scale(1) translate(0,0);
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
   }
   25% {
-    transform: scale(calc(1360/1118)) translate(6%,0);
+    transform: scale(calc(1360 / 1118)) translate(6%, 0);
     // scale: calc(1360/1118);
     // top: -29%;
     // left: 52%;
-    background: rgba(map.get($colors, "secondary-200"), .5)
+    background: rgba(map.get($colors, "secondary-200"), 0.5);
   }
   50% {
-    transform: scale(calc(1237/1118)) translate(27%,-3%);
+    transform: scale(calc(1237 / 1118)) translate(27%, -3%);
     // scale: calc(1237/1118);
     // top: -8%;
     // left: 49%;
-    background: rgba(map.get($colors, "secondary-200"), .7)
+    background: rgba(map.get($colors, "secondary-200"), 0.7);
   }
   75% {
-    transform: scale(calc(1273/1118)) translate(55%,33%);
+    transform: scale(calc(1273 / 1118)) translate(55%, 33%);
     // scale: calc(1273/1118);
     // top: 20%;
     // left: 55%;
@@ -259,23 +194,24 @@
 }
 
 @keyframes scaleCircle3 {
-  0%, 100% {
-    transform: scale(1) translate(0,0);
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
   }
   25% {
-    transform: scale(calc(604/638)) translate(24%,3%);
+    transform: scale(calc(604 / 638)) translate(24%, 3%);
     // scale: calc(604/638);
     // top: 69%;
     // left: 80%;
   }
   50% {
-    transform: scale(calc(604/638)) translate(31%,-3%);
+    transform: scale(calc(604 / 638)) translate(31%, -3%);
     // scale: calc(604/638);
     // top: 76%;
     // left: 74%;
   }
   75% {
-    transform: scale(calc(626/638)) translate(25%,-27%);
+    transform: scale(calc(626 / 638)) translate(25%, -27%);
     // scale: calc(626/638);
     // top: 70%;
     // left: 50%;
@@ -283,23 +219,24 @@
 }
 
 @keyframes scaleCircle4 {
-  0%, 100% {
-    transform: scale(1) translate(0,0);
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
   }
   25% {
-    transform: scale(calc(606/638)) translate(25%,2%);
+    transform: scale(calc(606 / 638)) translate(25%, 2%);
     // scale: calc(606/638);
     // top: 70%;
     // left: 74%;
   }
   50% {
-    transform: scale(calc(606/638)) translate(32%,-1%);
-    scale: calc(606/638);
+    transform: scale(calc(606 / 638)) translate(32%, -1%);
+    scale: calc(606 / 638);
     top: 77%;
     left: 71%;
   }
   75% {
-    transform: scale(calc(626/638)) translate(27%,-22%);
+    transform: scale(calc(626 / 638)) translate(27%, -22%);
     // scale: calc(626/638);
     // top: 72%;
     // left: 50%;
@@ -307,23 +244,24 @@
 }
 
 @keyframes scaleCircle5 {
-  0%, 100% {
-    transform: scale(1) translate(0,0);
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
   }
   25% {
-    transform: scale(calc(1606/1581)) translate(0,1.5%);
+    transform: scale(calc(1606 / 1581)) translate(0, 1.5%);
     // scale: calc(1606/1581);
     // top: -24%;
     // left: -21.5%;
   }
   50% {
-    transform: scale(calc(1616/1581)) translate(-6%,3%);
+    transform: scale(calc(1616 / 1581)) translate(-6%, 3%);
     // scale: calc(1616/1581);
     // top: -32%;
     // left: -20%;
   }
   75% {
-    transform: scale(calc(1678/1581)) translate(-6%,6%);
+    transform: scale(calc(1678 / 1581)) translate(-6%, 6%);
     // scale: calc(1678/1581);
     // top: -32%;
     // left: -17%;
@@ -331,23 +269,24 @@
 }
 
 @keyframes scaleCircle6 {
-  0%, 100% {
-    transform: scale(1) translate(0,0);
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
   }
   25% {
-    transform: scale(calc(1536/1512)) translate(4%,2%);
+    transform: scale(calc(1536 / 1512)) translate(4%, 2%);
     // scale: calc(1536/1512);
     // top: -21%;
     // left: -23%;
   }
   50% {
-    transform: scale(calc(1546/1512)) translate(-3%,3%);
+    transform: scale(calc(1546 / 1512)) translate(-3%, 3%);
     // scale: calc(1546/1512);
     // top: -28%;
     // left: -22%;
   }
   75% {
-    transform: scale(calc(1606/1512)) translate(-5%,6%);
+    transform: scale(calc(1606 / 1512)) translate(-5%, 6%);
     // scale: calc(1606/1512);
     // top: -30%;
     // left: -19%;

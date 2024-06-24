@@ -89,16 +89,14 @@
   .footer-back-to-top-btn {
     width: 20%;
   }
-
-  .footer-back-to-top-btn {
-    display: none;
-  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   footer {
-    padding: 56px 16px !important;
+    padding: 0 16px !important;
   }
+}
+@media screen and (max-width: 767px) {
   .footer-contact-information-container,
   .footer-social-media-container {
     flex-direction: column;
@@ -113,22 +111,11 @@
     width: 100%;
   }
 
-  .footer-social-media {
-    order: 1;
-  }
-
-  .footer-privacy {
-    order: 2;
-  }
-
   .footer-contact-information,
   .footer-navigation-menu {
     gap: 10px;
   }
 
-  .footer-back-to-top-btn {
-    display: none;
-  }
   .footer-vision-content {
     button {
       margin-top: 24px;
@@ -141,5 +128,14 @@
   }
   .footer-mark {
     margin-top: 32px;
+  }
+
+  .footer-back-to-top-btn {
+    button {
+      padding: 15px 17px;
+      span {
+        display: none;
+      }
+    }
   }
 }

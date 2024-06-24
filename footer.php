@@ -27,7 +27,7 @@
       <!-- <button class="flat-button primary-color text-uppercase mb-16">
         Start a project
       </button> -->
-      <button class="flat-button footer-button primary-color text-uppercase" tabindex="0">
+      <button class="flat-button toForm footer-button primary-color text-uppercase" tabindex="0">
         <span>Start a project</span> <i class="fa-solid fa-arrow-right"></i>
       </button>
     </div>
@@ -39,7 +39,7 @@
       </div>
       <div>
         <i class="fa-solid fa-phone mr-8"></i>
-        <a class="text-neutral-600" href="tel:+84397280997">(+84) 397 280997</a>
+        <a class="text-neutral-600" href="tel:+84397280997">(+84) 985 816 230</a>
       </div>
       <div>
         <i class="fa-solid fa-location-dot mr-8 text-neutral-600"></i>
@@ -69,7 +69,7 @@
 
     <div class="footer-back-to-top-btn">
       <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" href="#" class="stoked-button neutral-color text-uppercase">
-        Back to top <i class="fa-solid fa-arrow-up"></i>
+        <span>Back to top</span> <i class="fa-solid fa-arrow-up"></i>
       </button>
     </div>
   </div>

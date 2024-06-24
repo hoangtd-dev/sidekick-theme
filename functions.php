@@ -9,6 +9,14 @@ function my_awesome_scripts()
 
 add_action("wp_enqueue_scripts", "my_awesome_scripts");
 
+function enqueue_thankYou_page_styles()
+{
+    if (is_page_template('thank-you.php')) {
+        wp_enqueue_style('thankYou-page-style', get_template_directory_uri() . '/assets/main.css');
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_thankYou_page_styles');
+
 // multiple choice select
 function enqueue_select2()
 {
@@ -19,7 +27,7 @@ function enqueue_select2()
     wp_enqueue_script('select2-js', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js', array('jquery'), null, true);
 
     // Custom JS to initialize Select2
-    wp_enqueue_script('custom-select2-init', get_template_directory_uri() . '/js/select2-init.js', array('select2-js'), null, true);
+    // wp_enqueue_script('custom-select2-init', get_template_directory_uri() . '/js/select2-init.js', array('select2-js'), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_select2');
 // end multiple choice select
@@ -58,10 +66,10 @@ function handle_form_submission()
         $wpdb->insert($table_name, [
             'name' => $name,
             'email' => $email,
-            'phone'=> $phone,
-            'industry'=> $industry,
+            'phone' => $phone,
+            'industry' => $industry,
             'message' => $message,
-            'service'=> $service_string,
+            'service' => $service_string,
             'submitted_at' => current_time('mysql')
         ]);
 
@@ -73,7 +81,7 @@ function handle_form_submission()
 
         // Send confirmation email to user
         $user_subject = "Thank you for your submission";
-        $user_body = "Dear $name,\n\nThank you for your message. We will get back to you shortly.\n\nBest regards,\nYour Company";
+        $user_body = "Dear $name,\n\nThank you for your message. We will get back to you shortly.\n\nBest regards,\nSidekick Media";
         wp_mail($email, $user_subject, $user_body);
 
         // Redirect to a thank you page (change URL as needed)

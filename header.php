@@ -30,6 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" /> -->
   <?php wp_head(); ?>
 </head>
 
@@ -49,7 +50,8 @@
         <nav class="navMenu-list mt-20">
           <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#identity-section')); ?>">About
             us</a>
-          <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#mission-section')); ?>">Services</a>
+          <a class="navMenu-item text-uppercase"
+            href="<?php echo esc_url(home_url('/#mission-section')); ?>">Services</a>
           <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#task-completed-section')); ?>">Our
             works</a>
           <a class="navMenu-item text-uppercase" href="<?php echo esc_url(home_url('/#member-section')); ?>">Our
@@ -78,7 +80,7 @@
         <a class="text-uppercase text-neutral-600 p-20" href="#mission-section">Service</a>
         <a class="text-uppercase text-neutral-600 p-20" href="#task-completed-section">Our works</a>
         <a class="text-uppercase text-neutral-600 p-20" href="#member-section">Our team</a>
-        <a class="text-uppercase text-neutral-600 p-20" href="#review-section">Contact us</a>
+        <a class="text-uppercase text-neutral-600 p-20" href="#form-section">Contact us</a>
       </nav>
 
       <nav class="header-nav">

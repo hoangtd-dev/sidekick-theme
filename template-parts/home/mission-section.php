@@ -130,7 +130,7 @@
 				<div class="mission-detail-wrapper">
 					<div class="mission-text-wrapper">
 						<p class="mission-details-title text-uppercase">
-							website and app development
+							website & app development
 						</p>
 						<p class="mission-details-content">Build sleek, user-friendly, seamless functionality websites
 							and

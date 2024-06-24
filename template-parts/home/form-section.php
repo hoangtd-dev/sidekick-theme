@@ -8,15 +8,15 @@
         <div class="form-info">
             <div class="form-prefix">
                 <label for="fprefix" class="field-title">Mr/Mrs/Ms <span style="color: red">*</span></label>
-                <input type="text" id="fprefix" name="fprefix" class="field-input">
+                <input type="text" id="fprefix" name="fprefix" class="field-input" required>
             </div>
             <div class="form-name">
                 <label for="fname" class="field-title">Your Name <span style="color: red">*</span></label>
-                <input type="text" id="fname" name="fname" class="field-name">
+                <input type="text" id="fname" name="fname" class="field-name" required>
             </div>
             <div class="form-email">
                 <label for="femail" class="field-title">Your Email <span style="color: red">*</span></label>
-                <input type="email" id="femail" name="femail" class="field-email">
+                <input type="email" id="femail" name="femail" class="field-email" required>
             </div>
             <div class="form-phone">
                 <label for="fphone" class="field-title">Your Phone Number</label>
@@ -26,17 +26,17 @@
                 <label for="findustry" class="field-title">Your Company Industry <span
                         style="color: red">*</span></label>
                 <input type="text" id="findustry" name="findustry" class="field-industry"
-                    placeholder="Auto/ FMCG/ Real estate/ Banking/ Finance/ Retail/ SME/…)">
+                    placeholder="Auto/ FMCG/ Real estate/ Banking/ Finance/ Retail/ SME/…)" required>
             </div>
             <div class="form-message">
                 <label for="fmessage" class="field-title">Share With Us Your Project <span
                         style="color: red">*</span></label>
-                <textarea id="fmessage" name="fmessage" class="field-message" style="height: 118px"
+                <textarea id="fmessage" name="fmessage" class="field-message" style="height: 118px" required
                     placeholder="Share a detailed overview of your project, including its goals, scope, target audience, timeline, and any specific requirements or challenges. This information helps us understand your needs and tailor our support to ensure your project's success​."></textarea>
             </div>
             <div class="form-service">
                 <label for="fservice" class="field-title">Which SIDEKICK Services Are You Interested In?</label>
-                <select id="fservice" name="fservice[]" class="field-service" multiple>
+                <select id="fservice" name="fservice[]" class="field-service" multiple required>
                     <option class="text-uppercase" value="media-strategy&management">Media Strategy & Management
                     </option>
                     <option class="text-uppercase" value="branding&communication">Branding & Communication</option>
@@ -58,3 +58,6 @@
         </div>
     </div>
 </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<!-- <script src="/js/main.js"></script> -->
